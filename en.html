@@ -1,0 +1,699 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Hyunho Lim - Resume</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+}
+
+.simple-table-header {
+	background: rgb(247, 246, 243);
+	color: black;
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="fc40db48-05e7-4de7-8220-9134611fb5bf" class="page sans"><header><h1 class="page-title">Hyunho Lim - Resume</h1></header><div class="page-body"><p id="f207e29a-b550-415a-835d-e9f82f4c9ba4" class="">
+</p><hr id="0162b542-35ca-4fcd-801f-ed39adc5b675"/><p id="26acba9e-b9ba-41f3-8bef-f6570bb808cd" class="">
+</p><h2 id="e8727cd7-fa2a-49c5-b514-a5f08a8cc453" class="">🙆🏻‍♂️ Personal Info</h2><div id="bec2fdc6-182b-4b86-bee7-e41e7c6d739a" class="column-list"><div id="a5b954b8-ee14-4d0f-a30c-b90bacb26b9d" style="width:33.33333333333333%" class="column"><figure id="fe71131a-457b-4d8c-9831-75c1769700db" class="image"><a href="assets/profile.jpg"><img style="width:192px" src="assets/profile.jpg"/></a></figure></div><div id="987c4a69-1cc1-4afd-8136-20bcffe8d3e7" style="width:33.333333333333336%" class="column"><h3 id="36011908-8bd2-4011-8438-f4b533628a28" class="">Machine Learning Engineer</h3><p id="f9ce135b-a62c-41b5-bd82-1412981a407b" class="">
+</p><p id="f53d26a4-1c57-428e-83b1-0a5aaf283edb" class="">
+</p><p id="68a6ac97-2d3e-4703-9686-1cac13dface5" class="">🇰🇷 Seoul, South Korea</p></div><div id="12dd2cd7-bcc1-41f6-a2ed-0f88e019104b" style="width:33.333333333333336%" class="column"><h3 id="48a6b76f-3e09-4cc7-8d2e-bd1541282f92" class="">Email</h3><p id="1c7040a5-b035-4051-bc37-116eb2b4ae1b" class="">gusghrlrl101@gmail.com</p><p id="d6018c4f-acad-481b-ba56-104f9aed7884" class="">
+</p><h3 id="597694ab-25d2-488f-b492-0cc7db9c1eb9" class="">Github</h3><p id="9ec69e1e-37ac-40de-b8c6-0412b4e82315" class=""><a href="https://github.com/gusghrlrl101">https://github.com/gusghrlrl101</a></p></div></div><p id="cc2007dc-c745-42c4-86bf-b72b847851f0" class="">
+</p><hr id="844cefe3-7f39-4a98-8283-7a9f22b0eebd"/><p id="1dcdf9f1-9b81-42b6-89d9-745413d15f4f" class="">
+</p><h2 id="28a0fb0b-20cd-45fd-ab1e-94ecb65388d7" class="">🙋🏻‍♂️ About Me</h2><p id="c8cf92aa-aec1-484c-9670-27085748e068" class="">
+</p><p id="936f52f1-6cb8-4d70-9a72-53e8f406c80c" class="">3년차 개발자로 일하고 있으며, 주로 머신러닝 관련된 개발 업무를 진행하고 있습니다.
+전반적인 시스템 설계 및 개발을 할 수 있는 역량을 가지고 있습니다.</p><p id="a6f7f560-5fc7-45ef-9ab1-f2c1a8461556" class="">불필요하거나 반복되는 과정을 줄이고, 효율적으로 처리하는 것을 좋아합니다.
+호기심이 많아 다양한 것에 관심이 많고, 새로운 것을 배우거나 직접 경험하는 것을 좋아합니다.</p><p id="9414e660-4e0c-48f6-a4fe-374cb750be78" class="">빠르게 프로토타이핑하여 결과물을 만들고, 그 후에 보완해가며 안정된 환경을 구축하는 것을 선호합니다.
+이와 더불어 주도적으로 업무를 진행하여, 비즈니스 성장에 큰 기여를 할 수 있습니다.</p><p id="01ef4fb6-a08c-4174-adb3-ef3c2e4f55ae" class="">
+</p><hr id="8e617569-98ec-48f9-9099-07572e73ae9b"/><p id="7671ea52-d401-4ab3-88f7-1804ea143bdf" class="">
+</p><h2 id="8133431e-d6db-4e59-bc33-df3d71de0b0f" class="">📚 Skills</h2><p id="809798df-82c1-410e-b6f7-dbf467d5a793" class="">
+</p><p id="a6d626b6-011d-403c-a23f-410591911ae7" class="">Python, C++, Flutter, CUDA, Kubernetes, Argo Workflow <a href="https://stackshare.io/gusghrlrl101/my-stack">@ Detail</a></p><p id="1da8c3c6-911b-479f-ac8b-b1602d04f5c4" class="">
+</p><hr id="78391061-06b5-4c05-8283-c09c3d6ca748"/><p id="cfd62b53-002a-472c-b871-0ab1a1bcf90e" class="">
+</p><h2 id="3e412738-276f-4410-a879-ea5e0dfa4ec8" class="">👨🏻‍💻 Work Experience</h2><p id="559bbbcb-cd02-4280-a191-3e220d204278" class="">
+</p><h3 id="bea7f36c-0a52-416e-87fc-7f0687d91401" class=""><a href="https://www.kakaoenterprise.com"><strong>카카오 엔터프라이즈</strong></a></h3><p id="97da16c2-bd85-4303-8503-5cea76efce77" class="">카카오 엔터프라이즈 AI Lab 비전팀</p><div id="9ed3a5ae-8f6f-497f-b3dc-481a7575e973" class="column-list"><div id="521996ed-00db-4026-9134-2072ee0a67b9" style="width:50%" class="column"><p id="d93f3b8f-68a0-4614-92b3-b1cb7668520f" class=""><strong>소프트웨어 엔지니어</strong></p><p id="189e47fd-db24-4fc5-9ff6-13f43e84e6b4" class=""><mark class="highlight-gray"><strong>2019.12 ~ 현재</strong></mark></p></div><div id="511e5004-03ec-44f3-aa8b-e5e70fd1087e" style="width:50%" class="column"><ul id="f56343a6-414f-465b-bd78-327dff6aa7a0" class="bulleted-list"><li style="list-style-type:disc">무인상점 프로젝트 개발</li></ul><ul id="07c33140-514d-42d1-aa3d-e12fc966ad58" class="bulleted-list"><li style="list-style-type:disc">이미지 피쳐 검색 엔진 PaaS 개발</li></ul><ul id="e628c2e5-2788-4185-b709-c1574b0116a1" class="bulleted-list"><li style="list-style-type:disc">비전 Open API 제공</li></ul><ul id="bd9ec6d6-435a-4bcb-a96d-917d0abc4208" class="bulleted-list"><li style="list-style-type:disc">학습 데이터 레이블링 툴 개발</li></ul></div></div><p id="ccc1c6db-a235-4436-a9e5-9d39bbd8719d" class="">
+</p><h3 id="5c387663-7443-4b8e-8926-563920953a56" class=""><a href="https://www.kakaocorp.com"><strong>카카오</strong></a></h3><p id="890170de-251d-4933-96c7-52f944d15600" class="">카카오 AI Lab 멀티미디어처리파트</p><div id="c21acafe-e7a0-4093-a05e-e2a728b4aa43" class="column-list"><div id="d6301af2-1216-4c14-9665-3c6902fa835d" style="width:50%" class="column"><p id="3cf9bf15-422e-4845-8765-8d891e6e4479" class=""><strong>소프트웨어 엔지니어 (인턴)</strong></p><p id="6ee29a06-6e0d-49fd-824d-c406b1eb4857" class=""><mark class="highlight-gray"><strong>2019.06 ~ 2019.11</strong></mark></p></div><div id="93ca5292-8b7d-43dd-bf03-5c4934df6ebb" style="width:50%" class="column"><ul id="e2fd7041-8b90-46ff-9a45-a7f4563f7672" class="bulleted-list"><li style="list-style-type:disc">학습 데이터 레이블링 툴 개발</li></ul></div></div><p id="8bb712b9-45c0-4a70-8e13-6dbd75b28353" class="">
+</p><hr id="adaa019b-ffba-4ddf-8b41-c44352736b18"/><p id="a499dd29-a25d-4089-9125-365803297321" class="">
+</p><h2 id="a05d89e5-443c-4596-9040-6dd1f9962233" class="">💻 Project</h2><p id="76e8351b-7a54-417e-9a8a-0bc7eda1315b" class="">
+</p><h3 id="01e1a756-9fb4-4acd-80ec-8cefdccf1854" class="">무인 상점 프로젝트</h3><ul id="f834f003-81b4-4067-b70d-8aefc00ca667" class="bulleted-list"><li style="list-style-type:disc">실시간 멀티카메라 사람 트래킹 및 위치 추정을 이용한 무인 상점 개발 <a href="https://youtu.be/jxSbu-lDFFs">@ if kakao 발표</a><ul id="f8fe2be4-5c5e-48cf-9343-d68f96a3ffb4" class="bulleted-list"><li style="list-style-type:circle">DeepStream, TensorRT, Jetson, Gstreamer, C++, CUDA, Python, Influxdb, Kafka</li></ul></li></ul><ul id="7344fef8-9e7f-49e0-8cfe-11c6d1803727" class="bulleted-list"><li style="list-style-type:disc">무인 상점 프로젝트는 여러 대의 카메라를 통해 사람의 위치를 실시간으로 파악하는 시스템입니다. <a href="https://www.amazon.com/b?node=16008589011">@ Amazon Go</a> 와 같은 무인 상점 서비스는 3D depth 카메라를 사용하는 경우가 많은데, 일반 RGB 카메라를 이용해 구현하는게 목표였습니다.
+Nvidia <strong>Jetson</strong> (엣지 디바이스) 환경에서, 여러 카메라로부터의 스트림 처리 및 비디오 인코딩을 위해 <strong>C++</strong> 기반의 <strong>DeepStream</strong> 을 사용했습니다. 실시간 처리를 위해 딥러닝 모델 추론 속도가 빠른 <strong>TensorRT</strong> 로 변환 및 추론을 진행했습니다. 최적화가 필요한 부분에서는 <strong>CUDA</strong> 를 활용해 성능을 향상시켰습니다. 여러 기능의 <strong>Gstreamer</strong> 플러그인을 직접 구현하여 모듈 형태로 구성했습니다. 시계열 데이터 처리를 위해 <strong>InfluxDB</strong>, <strong>Kafka</strong> 를 활용했습니다. 또한 <strong>엣지 디바이스</strong> 환경 뿐만아니라, <strong>Kubernetes</strong> 를 사용하여 <strong>클라우드</strong> 환경으로 확장하였습니다.
+전체적인 시스템 구조 설계 및 개발을 혼자 진행하여 힘든 순간도 있었지만, 장/단기적인 목표를 정하고 하나씩 처리하며 성공적으로 마칠 수 있었습니다.</li></ul><p id="95c0df56-8ee5-4102-931c-58c2ba7ab870" class="">
+</p><h3 id="e5b54d6a-18cb-432f-9057-bff134b614e6" class="">이미지 피쳐 검색 엔진 PaaS</h3><ul id="4f032cb9-98db-4765-9f81-6548dea32837" class="bulleted-list"><li style="list-style-type:disc"><strong>HNSW</strong> (Hierarchical Navigable Small World) 및 <strong>OPQ</strong> (Optimized Product Quantization) 기반의 검색 엔진을 Argo Workflow 를 활용하여 PaaS 개발<ul id="a045edb0-e8da-454f-b0ce-39aace5936ca" class="bulleted-list"><li style="list-style-type:circle">Kubernetes, Argo Workflow, Python, Flutter</li></ul></li></ul><ul id="0937851c-b7f8-48b4-aecb-24f1e4e5a5e0" class="bulleted-list"><li style="list-style-type:disc">이미지 피처 검색 엔진은 대용량 이미지 데이터 색인이 가능한 <strong>Approximate KNN</strong> 엔진입니다. 피쳐 크기가 큰 데이터는 <strong>PQ, OPQ</strong> 를 활용하여 압축하고, 여러 노드에 샤딩을 하며 <strong>HNSW</strong> 를 이용해 색인을 진행합니다. 이미지 피쳐 검색 엔진은 <a href="https://shoppinghow.kakao.com/">@ 쇼핑하우</a> 에서 유사 상품 추천을 해주는 등, 여러 서비스에 이용되고 있습니다.
+데이터 전처리, 빌드 및 배포 등의 과정은 순차적으로 진행 돼야 하는 특성이 있는데, <strong>Argo Workflow</strong> 를 이용해 파이프라인을 구성하여 쉽게 관리할 수 있게 했습니다. 이를 통해, 기존 방식보다 자원을 효율적으로 사용 가능하게 구성했습니다. 또한 쉽게 사용할 수 있는 Web 환경을 구성하여, 서비스 생성 및 데이터 추가, 진행상황에 대해 쉽게 파악할 수 있게 구성했습니다.</li></ul><p id="a7a483f2-01ad-4310-8ad8-47f64f164098" class="">
+</p><h3 id="92c01080-ed78-441b-a771-06dc7b3ac975" class="">학습 데이터 레이블링 툴</h3><ul id="0a54e2b7-f45f-4605-8598-8c9ecd34379b" class="bulleted-list"><li style="list-style-type:disc">학습 데이터 레이블링을 위한 Web 기반 툴 개발<ul id="8bba8966-18d1-469d-8201-94fea1f19513" class="bulleted-list"><li style="list-style-type:circle">Python, Flutter, Rust, Vue.js</li></ul></li></ul><ul id="42b1a842-b099-4745-a313-d1327a7de41e" class="bulleted-list"><li style="list-style-type:disc">딥러닝 연구를 진행할 때, 학습에 필요한 데이터의 레이블링을 필요로 하는 경우가 많이 있습니다. 이를 위해 Web 기반으로 이미지 관련 데이터 레이블링을 할 수 있는 툴을 개발했습니다. 프론트엔드는 <strong>Flutter</strong>, <strong>Vue.js</strong> 를, 백엔드는 <strong>Python</strong>, <strong>Rust</strong> 를 이용했습니다. 사용자로부터 보완점, 추가 기능 등의 요구사항을 적극 반영하여 작업 능률을 향상시켰습니다. 또한, 이 때 필요한 데이터 수집과 전처리 작업 등을 진행하면서 데이터 흐름에 대해 이해할 수 있었습니다.</li></ul><p id="994fc032-1894-4e20-a363-568b8a115088" class="">
+</p><h3 id="c9d704e0-6dff-4ee5-bf54-1942ceb02975" class="">비전 Open API</h3><ul id="bb889342-4367-413c-bb80-6cf185c65685" class="bulleted-list"><li style="list-style-type:disc">여러 AI 모델들을 Open API 로 제공 <a href="https://vision-api.kakao.com">@ 데모 페이지</a><ul id="031f7c50-b678-45a6-a621-0670c89890ea" class="bulleted-list"><li style="list-style-type:circle">Kubernetes, Python, Argo CD, Helm</li></ul></li></ul><ul id="2314d7b5-1840-4cd5-b54a-9dc01ce2d904" class="bulleted-list"><li style="list-style-type:disc">팀 내에서 연구한 여러 AI 기술을 외부에 <strong>Open API</strong> 로 제공하였습니다. 이 과정에서 안정적인 서비스 제공을 위해 구조를 통일화 하고, <strong>Kubernetes</strong> 환경으로 마이그레이션 하였습니다. 개발 과정에서 필요한 여러 인프라를 <strong>Helm Chart</strong> 를 이용하여 빠르게 구축했습니다. 또한 <strong>Github Action</strong> 을 이용하여 테스트, 도커 이미지를 빌드 및 배포하였고, <strong>Argo CD</strong> 를 이용해 자동 배포하여 CI / CD 환경을 구축할 수 있었습니다.
+이를 통해, 사용자에게 직접 제공하는 서비스를 진행할 수 있어서 좋은 경험이 되었습니다. </li></ul><p id="d9a8e90c-496c-4cee-9a75-d2aa74130c3a" class="">
+</p><hr id="e89c2b1f-8fae-4d74-ab87-f46c34acaab7"/><p id="015ba273-019b-48d7-a3ce-271713e54ed4" class="">
+</p><h2 id="5aca8c92-5965-4f84-ba89-30bbf37ae713" class="">🎓 Education</h2><p id="0c6c2167-759b-4472-87fd-05149cec9c7e" class="">
+</p><div id="2bb3fecf-98d2-4d40-a3de-126e33b6f68d" class="column-list"><div id="c1adf51a-ab12-43e3-9a9e-5b9f58829f78" style="width:50.000000000000014%" class="column"><p id="2a4772d1-26d8-40c8-9a33-afa1c64e6430" class=""><strong>인하대학교</strong></p><p id="68ee70f4-d104-43b0-996a-70746b1c5407" class=""><mark class="highlight-gray">2014 ~ 2020</mark></p></div><div id="92266575-18d7-4f4f-9379-cb0aa71d261e" style="width:50%" class="column"><p id="fdf0e394-fc11-4edb-9404-62d682d2ff01" class="">학사, 정보통신공학과</p></div></div><p id="7a50798d-2feb-4534-9583-5f735f447068" class="">
+</p><hr id="673c0084-ed68-4a6c-8753-70b52b923e25"/><p id="8eec6edd-4472-45c4-ac83-116f2746593b" class="">
+</p><h2 id="b3f4ccd5-782b-4ad6-a8f4-1619e4406fb5" class="">🏆 Awards</h2><p id="33bfd8e4-4540-4c5f-85f5-5dafed8e2fb6" class="">
+</p><h3 id="886b0fe5-d8df-4a14-9ac5-dad5bf1f7f2c" class="">오픈소스 컨트리뷰톤</h3><div id="d3a5324b-ab6f-447c-a894-01066bb5fa6a" class="column-list"><div id="24628cf3-827c-4159-bb58-68ef1bd7db8d" style="width:50%" class="column"><p id="dd36cacf-dcf0-4047-a6a6-91dcda6d98d1" class=""><strong>대상 (과학기술정보통신부장관상)</strong></p><p id="3242ade2-d35d-4951-ac69-c275c77a60be" class=""><mark class="highlight-gray">2020</mark></p></div><div id="5414ed6a-a01a-4994-9b4a-7f738bd9a9b3" style="width:50%" class="column"><p id="e8af1b32-f712-442e-8d69-5f59b01f66b5" class=""><a href="https://www.oss.kr/contributhon_notice/show/bf01f047-eb8e-429a-a986-3560bf6d691e">@ Open Source Contribute </a>에 참가
+Google <a href="https://github.com/flutter/flutter">@ Flutter</a> 프로젝트에 오픈소스 기여</p></div></div><p id="2ac41bd6-a06f-4364-b236-dd29aabc3622" class="">
+</p><h3 id="7566d3c1-4cde-4c9e-9fb6-f6ac2059c96d" class="">인하대학교 정보통신종합설계</h3><div id="25153f17-6812-4813-9a57-e68a9ca6da12" class="column-list"><div id="4950950c-95d5-4abb-9538-2b954de6980d" style="width:50%" class="column"><p id="6e3fa61c-21bd-4848-8363-d4c7c4cf592a" class=""><strong>최우수상</strong></p><p id="3eb686b4-c834-42fc-8ffa-477edb3da622" class=""><mark class="highlight-gray">2019</mark></p></div><div id="56a2c671-3ef0-4d9d-858c-7e9a914ba123" style="width:50%" class="column"><p id="7e84a06a-b382-46c2-9ac0-511a44102c94" class="">교내에서 진행한 종합 설계 진행
+OpenPose, Simplify 를 이용한 3D 모델 생성 및 성능 향상 <a href="https://github.com/gusghrlrl101/Dance-Helper/blob/master/paper.pdf">@ 논문</a></p></div></div><p id="3c6121da-7839-4adf-80c0-153e55b4a8b9" class="">
+</p><h3 id="85edf8a7-0eb8-4105-90e3-70c54311fc52" class="">인하대학교 프로그래밍 경진대회</h3><div id="515db8f9-86cc-4e9c-a6e3-fccddf265bbb" class="column-list"><div id="1d858d77-cc59-4b3c-91fb-75a2002b9249" style="width:50%" class="column"><p id="05b277fa-aa0d-4e68-8001-d1521941342f" class=""><strong>은상</strong></p><p id="dbf3eb76-f288-4efa-95c1-656e449752a6" class=""><mark class="highlight-gray">2019</mark></p></div><div id="730bfcf3-4b5a-4c5f-90e5-2c61c06cf801" style="width:50%" class="column"><p id="30e901e5-a29f-464e-a264-01786c4af417" class="">교내에서 진행한 문제해결 대회 참가</p></div></div><p id="5a8cfaf9-ab90-4820-97e4-955273709076" class="">
+</p><hr id="affe198f-a955-4c91-a76f-0aaa60232fcf"/><p id="db35fcf2-d5b4-4540-9395-96480e957362" class="">
+</p><h2 id="611991f6-f1f3-437b-9466-e4d81346da42" class="">📝 Certifications</h2><p id="1baf48e7-7d16-4d0d-9950-e51bfd6c7e37" class="">
+</p><ul id="b12d6123-2760-404c-ad29-a8e53f1ad66b" class="bulleted-list"><li style="list-style-type:disc"><a href="https://courses.nvidia.com/certificates/d249401389b24889aa29bc5a6ccd7cea">CUDA C/C++ 를 활용한 가속화 컴퓨팅 기초 강의</a></li></ul><ul id="61885202-55d5-4e5c-bfad-e5fcbf8ec2cf" class="bulleted-list"><li style="list-style-type:disc">정보처리기사</li></ul><ul id="bc90a17b-18d1-4247-a3a2-01ab3f6defa5" class="bulleted-list"><li style="list-style-type:disc">OPIc (Intermediate High)</li></ul><ul id="8dd18ed1-e1d9-4ed6-9c44-ffda88afd167" class="bulleted-list"><li style="list-style-type:disc">한국사능력검정 1급</li></ul><ul id="fbb80fbf-840f-4b2d-ac07-7b44c3a8bc5e" class="bulleted-list"><li style="list-style-type:disc">양식조리기능사</li></ul><ul id="e57ec02a-5366-415d-84ff-f16caccec835" class="bulleted-list"><li style="list-style-type:disc">어드밴스드 오픈 워터 다이버</li></ul><p id="5e2c2606-19b7-4253-abf8-0afe44d957fc" class="">
+</p><hr id="bd9b35c5-83b3-4daf-80a3-9dadb0f16889"/></div></article></body></html>
