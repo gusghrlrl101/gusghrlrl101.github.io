@@ -9,716 +9,775 @@
 		<meta name="theme-color" content="#ffffff">
 	</head>
 </html>
+<!-- 아래에 노션 내보낸 html 붙여넣기 -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Hyunho Lim</title><style>
-/* cspell:disable-file */
-/* webkit printing magic: print all background colors */
-html {
-	-webkit-print-color-adjust: exact;
-}
-* {
-	box-sizing: border-box;
-	-webkit-print-color-adjust: exact;
-}
-
-html,
-body {
-	margin: 0;
-	padding: 0;
-}
-@media only screen {
-	body {
-		margin: 2em auto;
-		max-width: 900px;
-		color: rgb(55, 53, 47);
-	}
-}
-
-body {
-	line-height: 1.5;
-	white-space: pre-wrap;
-}
-
-a,
-a.visited {
-	color: inherit;
-	text-decoration: underline;
-}
-
-.pdf-relative-link-path {
-	font-size: 80%;
-	color: #444;
-}
-
-h1,
-h2,
-h3 {
-	letter-spacing: -0.01em;
-	line-height: 1.2;
-	font-weight: 600;
-	margin-bottom: 0;
-}
-
-.page-title {
-	font-size: 2.5rem;
-	font-weight: 700;
-	margin-top: 0;
-	margin-bottom: 0.75em;
-}
-
-h1 {
-	font-size: 1.875rem;
-	margin-top: 1.875rem;
-}
-
-h2 {
-	font-size: 1.5rem;
-	margin-top: 1.5rem;
-}
-
-h3 {
-	font-size: 1.25rem;
-	margin-top: 1.25rem;
-}
-
-.source {
-	border: 1px solid #ddd;
-	border-radius: 3px;
-	padding: 1.5em;
-	word-break: break-all;
-}
-
-.callout {
-	border-radius: 3px;
-	padding: 1rem;
-}
-
-figure {
-	margin: 1.25em 0;
-	page-break-inside: avoid;
-}
-
-figcaption {
-	opacity: 0.5;
-	font-size: 85%;
-	margin-top: 0.5em;
-}
-
-mark {
-	background-color: transparent;
-}
-
-.indented {
-	padding-left: 1.5em;
-}
-
-hr {
-	background: transparent;
-	display: block;
-	width: 100%;
-	height: 1px;
-	visibility: visible;
-	border: none;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
-}
-
-img {
-	max-width: 100%;
-}
-
-@media only print {
-	img {
-		max-height: 100vh;
-		object-fit: contain;
-	}
-}
-
-@page {
-	margin: 1in;
-}
-
-.collection-content {
-	font-size: 0.875rem;
-}
-
-.column-list {
-	display: flex;
-	justify-content: space-between;
-}
-
-.column {
-	padding: 0 1em;
-}
-
-.column:first-child {
-	padding-left: 0;
-}
-
-.column:last-child {
-	padding-right: 0;
-}
-
-.table_of_contents-item {
-	display: block;
-	font-size: 0.875rem;
-	line-height: 1.3;
-	padding: 0.125rem;
-}
-
-.table_of_contents-indent-1 {
-	margin-left: 1.5rem;
-}
-
-.table_of_contents-indent-2 {
-	margin-left: 3rem;
-}
-
-.table_of_contents-indent-3 {
-	margin-left: 4.5rem;
-}
-
-.table_of_contents-link {
-	text-decoration: none;
-	opacity: 0.7;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
-}
-
-table,
-th,
-td {
-	border: 1px solid rgba(55, 53, 47, 0.09);
-	border-collapse: collapse;
-}
-
-table {
-	border-left: none;
-	border-right: none;
-}
-
-th,
-td {
-	font-weight: normal;
-	padding: 0.25em 0.5em;
-	line-height: 1.5;
-	min-height: 1.5em;
-	text-align: left;
-}
-
-th {
-	color: rgba(55, 53, 47, 0.6);
-}
-
-ol,
-ul {
-	margin: 0;
-	margin-block-start: 0.6em;
-	margin-block-end: 0.6em;
-}
-
-li > ol:first-child,
-li > ul:first-child {
-	margin-block-start: 0.6em;
-}
-
-ul > li {
-	list-style: disc;
-}
-
-ul.to-do-list {
-	text-indent: -1.7em;
-}
-
-ul.to-do-list > li {
-	list-style: none;
-}
-
-.to-do-children-checked {
-	text-decoration: line-through;
-	opacity: 0.375;
-}
-
-ul.toggle > li {
-	list-style: none;
-}
-
-ul {
-	padding-inline-start: 1.7em;
-}
-
-ul > li {
-	padding-left: 0.1em;
-}
-
-ol {
-	padding-inline-start: 1.6em;
-}
-
-ol > li {
-	padding-left: 0.2em;
-}
-
-.mono ol {
-	padding-inline-start: 2em;
-}
-
-.mono ol > li {
-	text-indent: -0.4em;
-}
-
-.toggle {
-	padding-inline-start: 0em;
-	list-style-type: none;
-}
-
-/* Indent toggle children */
-.toggle > li > details {
-	padding-left: 1.7em;
-}
-
-.toggle > li > details > summary {
-	margin-left: -1.1em;
-}
-
-.selected-value {
-	display: inline-block;
-	padding: 0 0.5em;
-	background: rgba(206, 205, 202, 0.5);
-	border-radius: 3px;
-	margin-right: 0.5em;
-	margin-top: 0.3em;
-	margin-bottom: 0.3em;
-	white-space: nowrap;
-}
-
-.collection-title {
-	display: inline-block;
-	margin-right: 1em;
-}
-
-.simple-table {
-	margin-top: 1em;
-	font-size: 0.875rem;
-	empty-cells: show;
-}
-.simple-table td {
-	height: 29px;
-	min-width: 120px;
-}
-
-.simple-table th {
-	height: 29px;
-	min-width: 120px;
-}
-
-.simple-table-header-color {
-	background: rgb(247, 246, 243);
-	color: black;
-}
-.simple-table-header {
-	font-weight: 500;
-}
-
-time {
-	opacity: 0.5;
-}
-
-.icon {
-	display: inline-block;
-	max-width: 1.2em;
-	max-height: 1.2em;
-	text-decoration: none;
-	vertical-align: text-bottom;
-	margin-right: 0.5em;
-}
-
-img.icon {
-	border-radius: 3px;
-}
-
-.user-icon {
-	width: 1.5em;
-	height: 1.5em;
-	border-radius: 100%;
-	margin-right: 0.5rem;
-}
-
-.user-icon-inner {
-	font-size: 0.8em;
-}
-
-.text-icon {
-	border: 1px solid #000;
-	text-align: center;
-}
-
-.page-cover-image {
-	display: block;
-	object-fit: cover;
-	width: 100%;
-	max-height: 30vh;
-}
-
-.page-header-icon {
-	font-size: 3rem;
-	margin-bottom: 1rem;
-}
-
-.page-header-icon-with-cover {
-	margin-top: -0.72em;
-	margin-left: 0.07em;
-}
-
-.page-header-icon img {
-	border-radius: 3px;
-}
-
-.link-to-page {
-	margin: 1em 0;
-	padding: 0;
-	border: none;
-	font-weight: 500;
-}
-
-p > .user {
-	opacity: 0.5;
-}
-
-td > .user,
-td > time {
-	white-space: nowrap;
-}
-
-input[type="checkbox"] {
-	transform: scale(1.5);
-	margin-right: 0.6em;
-	vertical-align: middle;
-}
-
-p {
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-}
-
-.image {
-	border: none;
-	margin: 1.5em 0;
-	padding: 0;
-	border-radius: 0;
-	text-align: center;
-}
-
-.code,
-code {
-	background: rgba(135, 131, 120, 0.15);
-	border-radius: 3px;
-	padding: 0.2em 0.4em;
-	border-radius: 3px;
-	font-size: 85%;
-	tab-size: 2;
-}
-
-code {
-	color: #eb5757;
-}
-
-.code {
-	padding: 1.5em 1em;
-}
-
-.code-wrap {
-	white-space: pre-wrap;
-	word-break: break-all;
-}
-
-.code > code {
-	background: none;
-	padding: 0;
-	font-size: 100%;
-	color: inherit;
-}
-
-blockquote {
-	font-size: 1.25em;
-	margin: 1em 0;
-	padding-left: 1em;
-	border-left: 3px solid rgb(55, 53, 47);
-}
-
-.bookmark {
-	text-decoration: none;
-	max-height: 8em;
-	padding: 0;
-	display: flex;
-	width: 100%;
-	align-items: stretch;
-}
-
-.bookmark-title {
-	font-size: 0.85em;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	height: 1.75em;
-	white-space: nowrap;
-}
-
-.bookmark-text {
-	display: flex;
-	flex-direction: column;
-}
-
-.bookmark-info {
-	flex: 4 1 180px;
-	padding: 12px 14px 14px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.bookmark-image {
-	width: 33%;
-	flex: 1 1 180px;
-	display: block;
-	position: relative;
-	object-fit: cover;
-	border-radius: 1px;
-}
-
-.bookmark-description {
-	color: rgba(55, 53, 47, 0.6);
-	font-size: 0.75em;
-	overflow: hidden;
-	max-height: 4.5em;
-	word-break: break-word;
-}
-
-.bookmark-href {
-	font-size: 0.75em;
-	margin-top: 0.25em;
-}
-
-.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
-.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
-.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
-.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
-.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
-.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
-.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
-.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
-.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
-.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
-.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
-.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
-.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
-.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
-.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
-.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
-.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
-.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
-.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
-.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
-.highlight-default {
-	color: rgba(55, 53, 47, 1);
-}
-.highlight-gray {
-	color: rgba(120, 119, 116, 1);
-	fill: rgba(120, 119, 116, 1);
-}
-.highlight-brown {
-	color: rgba(159, 107, 83, 1);
-	fill: rgba(159, 107, 83, 1);
-}
-.highlight-orange {
-	color: rgba(217, 115, 13, 1);
-	fill: rgba(217, 115, 13, 1);
-}
-.highlight-yellow {
-	color: rgba(203, 145, 47, 1);
-	fill: rgba(203, 145, 47, 1);
-}
-.highlight-teal {
-	color: rgba(68, 131, 97, 1);
-	fill: rgba(68, 131, 97, 1);
-}
-.highlight-blue {
-	color: rgba(51, 126, 169, 1);
-	fill: rgba(51, 126, 169, 1);
-}
-.highlight-purple {
-	color: rgba(144, 101, 176, 1);
-	fill: rgba(144, 101, 176, 1);
-}
-.highlight-pink {
-	color: rgba(193, 76, 138, 1);
-	fill: rgba(193, 76, 138, 1);
-}
-.highlight-red {
-	color: rgba(212, 76, 71, 1);
-	fill: rgba(212, 76, 71, 1);
-}
-.highlight-gray_background {
-	background: rgba(241, 241, 239, 1);
-}
-.highlight-brown_background {
-	background: rgba(244, 238, 238, 1);
-}
-.highlight-orange_background {
-	background: rgba(251, 236, 221, 1);
-}
-.highlight-yellow_background {
-	background: rgba(251, 243, 219, 1);
-}
-.highlight-teal_background {
-	background: rgba(237, 243, 236, 1);
-}
-.highlight-blue_background {
-	background: rgba(231, 243, 248, 1);
-}
-.highlight-purple_background {
-	background: rgba(244, 240, 247, 0.8);
-}
-.highlight-pink_background {
-	background: rgba(249, 238, 243, 0.8);
-}
-.highlight-red_background {
-	background: rgba(253, 235, 236, 1);
-}
-.block-color-default {
-	color: inherit;
-	fill: inherit;
-}
-.block-color-gray {
-	color: rgba(120, 119, 116, 1);
-	fill: rgba(120, 119, 116, 1);
-}
-.block-color-brown {
-	color: rgba(159, 107, 83, 1);
-	fill: rgba(159, 107, 83, 1);
-}
-.block-color-orange {
-	color: rgba(217, 115, 13, 1);
-	fill: rgba(217, 115, 13, 1);
-}
-.block-color-yellow {
-	color: rgba(203, 145, 47, 1);
-	fill: rgba(203, 145, 47, 1);
-}
-.block-color-teal {
-	color: rgba(68, 131, 97, 1);
-	fill: rgba(68, 131, 97, 1);
-}
-.block-color-blue {
-	color: rgba(51, 126, 169, 1);
-	fill: rgba(51, 126, 169, 1);
-}
-.block-color-purple {
-	color: rgba(144, 101, 176, 1);
-	fill: rgba(144, 101, 176, 1);
-}
-.block-color-pink {
-	color: rgba(193, 76, 138, 1);
-	fill: rgba(193, 76, 138, 1);
-}
-.block-color-red {
-	color: rgba(212, 76, 71, 1);
-	fill: rgba(212, 76, 71, 1);
-}
-.block-color-gray_background {
-	background: rgba(241, 241, 239, 1);
-}
-.block-color-brown_background {
-	background: rgba(244, 238, 238, 1);
-}
-.block-color-orange_background {
-	background: rgba(251, 236, 221, 1);
-}
-.block-color-yellow_background {
-	background: rgba(251, 243, 219, 1);
-}
-.block-color-teal_background {
-	background: rgba(237, 243, 236, 1);
-}
-.block-color-blue_background {
-	background: rgba(231, 243, 248, 1);
-}
-.block-color-purple_background {
-	background: rgba(244, 240, 247, 0.8);
-}
-.block-color-pink_background {
-	background: rgba(249, 238, 243, 0.8);
-}
-.block-color-red_background {
-	background: rgba(253, 235, 236, 1);
-}
-.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
-.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
-.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
-.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
-.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
-.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
-.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
-.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
-.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
-.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
-
-.checkbox {
-	display: inline-flex;
-	vertical-align: text-bottom;
-	width: 16;
-	height: 16;
-	background-size: 16px;
-	margin-left: 2px;
-	margin-right: 5px;
-}
-
-.checkbox-on {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-
-.checkbox-off {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-	
-</style></head><body><article id="fc40db48-05e7-4de7-8220-9134611fb5bf" class="page sans"><header><h1 class="page-title">Hyunho Lim</h1></header><div class="page-body"><p id="f207e29a-b550-415a-835d-e9f82f4c9ba4" class="">
-</p><hr id="0162b542-35ca-4fcd-801f-ed39adc5b675"/><p id="26acba9e-b9ba-41f3-8bef-f6570bb808cd" class="">
-</p><h2 id="e8727cd7-fa2a-49c5-b514-a5f08a8cc453" class="">🙆🏻‍♂️ Personal Info</h2><div id="bec2fdc6-182b-4b86-bee7-e41e7c6d739a" class="column-list"><div id="a5b954b8-ee14-4d0f-a30c-b90bacb26b9d" style="width:33.33333333333333%" class="column"><figure id="fe71131a-457b-4d8c-9831-75c1769700db" class="image"><a href="assets/profile.jpg"><img style="width:192px" src="assets/profile.jpg"/></a></figure></div><div id="987c4a69-1cc1-4afd-8136-20bcffe8d3e7" style="width:33.333333333333336%" class="column"><h3 id="36011908-8bd2-4011-8438-f4b533628a28" class="">Data / Machine Learning
-Engineer</h3><p id="f9ce135b-a62c-41b5-bd82-1412981a407b" class="">
-</p><p id="f53d26a4-1c57-428e-83b1-0a5aaf283edb" class="">
-</p><p id="68a6ac97-2d3e-4703-9686-1cac13dface5" class="">🇰🇷 Seoul, South Korea</p></div><div id="12dd2cd7-bcc1-41f6-a2ed-0f88e019104b" style="width:33.333333333333336%" class="column"><h3 id="48a6b76f-3e09-4cc7-8d2e-bd1541282f92" class="">Email</h3><p id="1c7040a5-b035-4051-bc37-116eb2b4ae1b" class="">gusghrlrl101@gmail.com</p><p id="d6018c4f-acad-481b-ba56-104f9aed7884" class="">
-</p><h3 id="597694ab-25d2-488f-b492-0cc7db9c1eb9" class="">Github</h3><p id="9ec69e1e-37ac-40de-b8c6-0412b4e82315" class=""><a href="https://github.com/gusghrlrl101">https://github.com/gusghrlrl101</a></p></div></div><p id="cc2007dc-c745-42c4-86bf-b72b847851f0" class="">
-</p><hr id="844cefe3-7f39-4a98-8283-7a9f22b0eebd"/><p id="1dcdf9f1-9b81-42b6-89d9-745413d15f4f" class="">
-</p><h2 id="28a0fb0b-20cd-45fd-ab1e-94ecb65388d7" class="">🙋🏻‍♂️ About Me</h2><p id="c8cf92aa-aec1-484c-9670-27085748e068" class="">
-</p><p id="936f52f1-6cb8-4d70-9a72-53e8f406c80c" class="">I’m working as a developer, with <span id="my-career-ages"></span> years of experience, mainly in data / machine learning engineering.
-I have the ability to design and develop the overall system.</p><p id="a6f7f560-5fc7-45ef-9ab1-f2c1a8461556" class="">I like to reduce unnecessary or repetitive processes and make them more efficient.
-I’m interested in a variety of things. I also like to learn new things and have experience.</p><p id="9414e660-4e0c-48f6-a4fe-374cb750be78" class="">I prefer prototyping quickly to deliver a result, then augment it to build a stable environment.
-In addition, I can make a significant contribution to the growth of the business by taking the initiative in works.</p><p id="01ef4fb6-a08c-4174-adb3-ef3c2e4f55ae" class="">
-</p><hr id="8e617569-98ec-48f9-9099-07572e73ae9b"/><p id="7671ea52-d401-4ab3-88f7-1804ea143bdf" class="">
-</p><h2 id="8133431e-d6db-4e59-bc33-df3d71de0b0f" class="">📚 Skills</h2><p id="809798df-82c1-410e-b6f7-dbf467d5a793" class="">
-</p><p id="a6d626b6-011d-403c-a23f-410591911ae7" class="">Python, C++, Flutter, CUDA, Kubernetes, Argo Workflow, Airflow <a href="https://stackshare.io/gusghrlrl101/my-stack">@ Detail</a></p><p id="1da8c3c6-911b-479f-ac8b-b1602d04f5c4" class="">
-</p><hr id="78391061-06b5-4c05-8283-c09c3d6ca748"/><p id="cfd62b53-002a-472c-b871-0ab1a1bcf90e" class="">
-</p><h2 id="3e412738-276f-4410-a879-ea5e0dfa4ec8" class="">👨🏻‍💻 Work Experience</h2><p id="e529a693-011e-4103-9520-eab7d3b93a0a" class="">
-</p><h3 id="5efeb171-1282-487d-b463-824bf7ba332b" class=""><a href="https://www.woowahan.com/">Woowa Brothers</a></h3><p id="20a01562-9059-4e5f-8602-f001c8927dbe" class="">Data Service Group, Data Product Team</p><div id="2c2dfc20-af52-439f-93f7-10d96a430250" class="column-list"><div id="6313db31-9b80-47b5-9a30-d806a8c326a7" style="width:50%" class="column"><p id="2cc4107e-5d47-42d0-9ed2-df8fad389107" class=""><strong>Data Engineer</strong></p><p id="0a466a5f-c1ab-48db-84eb-3958c2a48124" class=""><mark class="highlight-gray"><strong>2022.06 ~ Present</strong></mark></p></div><div id="6bceb4fe-0d35-475b-b904-d22d2a4364eb" style="width:50%" class="column"><ul id="247cd34a-fff5-4e84-8a38-cd1d762bc33e" class="bulleted-list"><li style="list-style-type:disc">Data Pipelining</li></ul><ul id="830410f7-b84b-46df-934f-915710022fd6" class="bulleted-list"><li style="list-style-type:disc">Service Anomaly Detection</li></ul></div></div><p id="bea7f36c-0a52-416e-87fc-7f0687d91401" class="">
-</p><h3 id="658381b9-7b4a-48b8-8ada-62013ade439e" class=""><a href="https://www.kakaoenterprise.com"><strong>Kakao Enterprise</strong></a></h3><p id="97da16c2-bd85-4303-8503-5cea76efce77" class="">AI Lab, Vision Team</p><div id="9ed3a5ae-8f6f-497f-b3dc-481a7575e973" class="column-list"><div id="521996ed-00db-4026-9134-2072ee0a67b9" style="width:50%" class="column"><p id="d93f3b8f-68a0-4614-92b3-b1cb7668520f" class=""><strong>Machine Learning Engineer</strong></p><p id="189e47fd-db24-4fc5-9ff6-13f43e84e6b4" class=""><mark class="highlight-gray"><strong>2019.12 ~ 2022.06</strong></mark></p></div><div id="511e5004-03ec-44f3-aa8b-e5e70fd1087e" style="width:50%" class="column"><ul id="f56343a6-414f-465b-bd78-327dff6aa7a0" class="bulleted-list"><li style="list-style-type:disc">Unmanned store development</li></ul><ul id="07c33140-514d-42d1-aa3d-e12fc966ad58" class="bulleted-list"><li style="list-style-type:disc">Image feature search engine PaaS development</li></ul><ul id="e628c2e5-2788-4185-b709-c1574b0116a1" class="bulleted-list"><li style="list-style-type:disc">Providing AI vision Open API</li></ul><ul id="bd9ec6d6-435a-4bcb-a96d-917d0abc4208" class="bulleted-list"><li style="list-style-type:disc">Traning data labeling tool development</li></ul></div></div><p id="ccc1c6db-a235-4436-a9e5-9d39bbd8719d" class="">
-</p><h3 id="5c387663-7443-4b8e-8926-563920953a56" class=""><a href="https://www.kakaocorp.com"><strong>Kakao</strong></a></h3><p id="890170de-251d-4933-96c7-52f944d15600" class="">AI Lab, Multimedia Processing Part</p><div id="c21acafe-e7a0-4093-a05e-e2a728b4aa43" class="column-list"><div id="d6301af2-1216-4c14-9665-3c6902fa835d" style="width:50%" class="column"><p id="3cf9bf15-422e-4845-8765-8d891e6e4479" class=""><strong>Software Engineer (Intern)</strong></p><p id="6ee29a06-6e0d-49fd-824d-c406b1eb4857" class=""><mark class="highlight-gray"><strong>2019.06 ~ 2019.11</strong></mark></p></div><div id="93ca5292-8b7d-43dd-bf03-5c4934df6ebb" style="width:50%" class="column"><ul id="e2fd7041-8b90-46ff-9a45-a7f4563f7672" class="bulleted-list"><li style="list-style-type:disc">Unmanned store development</li></ul><ul id="30115660-96a1-4eb0-b43a-bad1cbeacce2" class="bulleted-list"><li style="list-style-type:disc">Traning data labeling tool development</li></ul></div></div><p id="8bb712b9-45c0-4a70-8e13-6dbd75b28353" class="">
-</p><hr id="adaa019b-ffba-4ddf-8b41-c44352736b18"/><p id="a499dd29-a25d-4089-9125-365803297321" class="">
-</p><h2 id="a05d89e5-443c-4596-9040-6dd1f9962233" class="">💻 Project</h2><p id="76e8351b-7a54-417e-9a8a-0bc7eda1315b" class="">
-</p><h3 id="01e1a756-9fb4-4acd-80ec-8cefdccf1854" class="">Unmanned Store</h3><ul id="f834f003-81b4-4067-b70d-8aefc00ca667" class="bulleted-list"><li style="list-style-type:disc">Development for unmanned stores using real-time multi-camera person tracking and location estimation <a href="https://youtu.be/jxSbu-lDFFs">@ if Kakao presentation</a><ul id="f8fe2be4-5c5e-48cf-9343-d68f96a3ffb4" class="bulleted-list"><li style="list-style-type:circle">DeepStream, TensorRT, Jetson, Gstreamer, C++, CUDA, Python, Influxdb, Kafka</li></ul></li></ul><ul id="7344fef8-9e7f-49e0-8cfe-11c6d1803727" class="bulleted-list"><li style="list-style-type:disc">The unmanned store project is a system that tracks and estimates the location of people in real-time through multiple cameras. Unmanned store services like <a href="https://www.amazon.com/b?node=16008589011">Amazon Go</a> mostly use 3D depth cameras, our goal was to implement it using a regular RGB camera.
-In Nvidia <strong>Jetson</strong> (edge device) environment, I used <strong>DeepStream</strong> based on <strong>C++</strong> for video encoding and stream processing from multiple cameras. For real-time processing, inference were performed after converting to TensorRT, which has a fast deep learning model inference speed. In areas that need optimization, <strong>CUDA</strong> was used to improve performance. <strong>Gstreamer</strong> plugins for various functions were directly implemented and configured in the form of modules. <strong>InfluxDB</strong> and <strong>Kafka</strong> were utilized for time series data processing. I extended to cloud environment as well as edge device environment using <strong>Kubernetes</strong>.
-There were difficult moments as I went through design and development of the overall system structure all by myself, but I was able to successfully finish by setting long-term/short-term goals and processing them one by one.</li></ul><p id="95c0df56-8ee5-4102-931c-58c2ba7ab870" class="">
-</p><h3 id="e5b54d6a-18cb-432f-9057-bff134b614e6" class="">Image Feature Search Engine PaaS</h3><ul id="4f032cb9-98db-4765-9f81-6548dea32837" class="bulleted-list"><li style="list-style-type:disc">Development for PaaS using <strong>Argo Workflow</strong> for <strong>HNSW</strong> (Hierarchical Navigable Small World) and <strong>OPQ</strong> (Optimized Product Quantization) based search engine<ul id="a045edb0-e8da-454f-b0ce-39aace5936ca" class="bulleted-list"><li style="list-style-type:circle">Kubernetes, Argo Workflow, Python, Flutter</li></ul></li></ul><ul id="0937851c-b7f8-48b4-aecb-24f1e4e5a5e0" class="bulleted-list"><li style="list-style-type:disc">The image feature search engine is an <strong>Approximate KNN</strong> engine capable of indexing large amounts of image data. Data with large feature sizes are compressed using <strong>PQ</strong> and <strong>OPQ</strong>, sharded across multiple nodes, and indexed using <strong>HNSW</strong>. The image feature search engine is used in several services, such as recommending similar products in <a href="https://shoppinghow.kakao.com/">Shopping How</a>.
-Processes such as data preprocessing, build and deployment have to be performed sequentially. <strong>Argo Workflow</strong> was used to configure the pipeline to make it easier to manage. In this way, I have organized the resources to be used more efficiently than in the conventional way. In addition, I developed an easy-to-use web environment so that service creation, data addition, and progress can be easily understood.</li></ul><p id="a7a483f2-01ad-4310-8ad8-47f64f164098" class="">
-</p><h3 id="92c01080-ed78-441b-a771-06dc7b3ac975" class=""> Traing Data Labeling Tool</h3><ul id="0a54e2b7-f45f-4605-8598-8c9ecd34379b" class="bulleted-list"><li style="list-style-type:disc">Development for a web-based tool for labeling training data<ul id="8bba8966-18d1-469d-8201-94fea1f19513" class="bulleted-list"><li style="list-style-type:circle">Python, Flutter, Rust, Vue.js</li></ul></li></ul><ul id="42b1a842-b099-4745-a313-d1327a7de41e" class="bulleted-list"><li style="list-style-type:disc">When researching deep learning, it is necessary to label the data required for training. For this, I developed a web-based tool for image-related data labeling. The front-end used <strong>Flutter</strong> and <strong>Vue.js</strong>, and the back-end used <strong>Python</strong> and <strong>Rust</strong>. I have improved work efficiency by actively reflecting the users&#x27; requests for supplementary points and additional functions. In addition, I was able to understand the data flow while performing data collection and pre-processing tasks.</li></ul><p id="994fc032-1894-4e20-a363-568b8a115088" class="">
-</p><h3 id="c9d704e0-6dff-4ee5-bf54-1942ceb02975" class="">AI Vision Open API</h3><ul id="bb889342-4367-413c-bb80-6cf185c65685" class="bulleted-list"><li style="list-style-type:disc">Providing AI vision models as Open API <a href="https://vision-api.kakao.com">@ demo page</a><ul id="031f7c50-b678-45a6-a621-0670c89890ea" class="bulleted-list"><li style="list-style-type:circle">Kubernetes, Python, Argo CD, Github Action, Helm</li></ul></li></ul><ul id="5b5bef9e-e467-45d8-b478-c8b7b0d2fd0c" class="bulleted-list"><li style="list-style-type:disc">I provided Several AI technologies researched within the team externally as <strong>Open API</strong>. In this process, I unified the structure to provide stable services and migrated to the <strong>Kubernetes</strong> environment. Several infrastructures needed in the development process were quickly built using <strong>Helm Chart</strong>. I made a system develop and deploy by completely separating the production/development environment. In addition, I was able to build a <strong>CI/CD</strong> environment by using <strong>Github Action</strong> to test and to build and deploy <strong>Docker</strong> images and automatically deploy them using <strong>Argo CD</strong>.
-Through this, it was a good experience to be able to proceed with the service provided directly to users.</li></ul><p id="d9a8e90c-496c-4cee-9a75-d2aa74130c3a" class="">
-</p><hr id="e89c2b1f-8fae-4d74-ab87-f46c34acaab7"/><p id="015ba273-019b-48d7-a3ce-271713e54ed4" class="">
-</p><h2 id="5aca8c92-5965-4f84-ba89-30bbf37ae713" class="">🎓 Education</h2><p id="0c6c2167-759b-4472-87fd-05149cec9c7e" class="">
-</p><div id="2bb3fecf-98d2-4d40-a3de-126e33b6f68d" class="column-list"><div id="c1adf51a-ab12-43e3-9a9e-5b9f58829f78" style="width:50.000000000000014%" class="column"><p id="2a4772d1-26d8-40c8-9a33-afa1c64e6430" class="">Inha University</p><p id="68ee70f4-d104-43b0-996a-70746b1c5407" class=""><mark class="highlight-gray">2014 ~ 2020</mark></p></div><div id="92266575-18d7-4f4f-9379-cb0aa71d261e" style="width:50%" class="column"><p id="fdf0e394-fc11-4edb-9404-62d682d2ff01" class="">Bachelor, Information and Communication Engineering</p></div></div><p id="7a50798d-2feb-4534-9583-5f735f447068" class="">
-</p><hr id="673c0084-ed68-4a6c-8753-70b52b923e25"/><p id="8eec6edd-4472-45c4-ac83-116f2746593b" class="">
-</p><h2 id="b3f4ccd5-782b-4ad6-a8f4-1619e4406fb5" class="">🏆 Awards</h2><p id="33bfd8e4-4540-4c5f-85f5-5dafed8e2fb6" class="">
-</p><h3 id="886b0fe5-d8df-4a14-9ac5-dad5bf1f7f2c" class="">Open Source Contributon</h3><div id="d3a5324b-ab6f-447c-a894-01066bb5fa6a" class="column-list"><div id="24628cf3-827c-4159-bb58-68ef1bd7db8d" style="width:50%" class="column"><p id="dd36cacf-dcf0-4047-a6a6-91dcda6d98d1" class=""><strong>Grand Prize (Minister Award of Ministry of Science and ICT)</strong></p><p id="3242ade2-d35d-4951-ac69-c275c77a60be" class=""><mark class="highlight-gray">2020</mark></p></div><div id="5414ed6a-a01a-4994-9b4a-7f738bd9a9b3" style="width:50%" class="column"><p id="e8af1b32-f712-442e-8d69-5f59b01f66b5" class="">Participation in <a href="https://www.oss.kr/contributhon_notice/show/bf01f047-eb8e-429a-a986-3560bf6d691e">Open Source Contribute</a>
-Open Source Contibutions to the Google <a href="https://github.com/flutter/flutter">Flutter</a> project</p></div></div><p id="2ac41bd6-a06f-4364-b236-dd29aabc3622" class="">
-</p><h3 id="7566d3c1-4cde-4c9e-9fb6-f6ac2059c96d" class="">Inha University Information and Communication Engineering <strong>Comprehensive Design</strong> Contest</h3><div id="25153f17-6812-4813-9a57-e68a9ca6da12" class="column-list"><div id="4950950c-95d5-4abb-9538-2b954de6980d" style="width:50%" class="column"><p id="6e3fa61c-21bd-4848-8363-d4c7c4cf592a" class=""><strong>Grand Prize</strong></p><p id="3eb686b4-c834-42fc-8ffa-477edb3da622" class=""><mark class="highlight-gray">2019</mark></p></div><div id="56a2c671-3ef0-4d9d-858c-7e9a914ba123" style="width:50%" class="column"><p id="7e84a06a-b382-46c2-9ac0-511a44102c94" class="">Participation in engineering comprehensive design competition on campus
-3D model creation and performance improvement using OpenPose and Simplify <a href="https://github.com/gusghrlrl101/Dance-Helper/blob/master/paper.pdf">@ paper</a></p></div></div><p id="3c6121da-7839-4adf-80c0-153e55b4a8b9" class="">
-</p><h3 id="85edf8a7-0eb8-4105-90e3-70c54311fc52" class="">Inha University Programming Contest</h3><div id="515db8f9-86cc-4e9c-a6e3-fccddf265bbb" class="column-list"><div id="1d858d77-cc59-4b3c-91fb-75a2002b9249" style="width:50%" class="column"><p id="05b277fa-aa0d-4e68-8001-d1521941342f" class=""><strong>Silver Prize</strong></p><p id="dbf3eb76-f288-4efa-95c1-656e449752a6" class=""><mark class="highlight-gray">2019</mark></p></div><div id="730bfcf3-4b5a-4c5f-90e5-2c61c06cf801" style="width:50%" class="column"><p id="30e901e5-a29f-464e-a264-01786c4af417" class="">Participation in problem solving competition held on campus</p></div></div><p id="5a8cfaf9-ab90-4820-97e4-955273709076" class="">
-</p><hr id="affe198f-a955-4c91-a76f-0aaa60232fcf"/><p id="db35fcf2-d5b4-4540-9395-96480e957362" class="">
-</p><h2 id="611991f6-f1f3-437b-9466-e4d81346da42" class="">📝 Certifications</h2><p id="1baf48e7-7d16-4d0d-9950-e51bfd6c7e37" class="">
-</p><ul id="b12d6123-2760-404c-ad29-a8e53f1ad66b" class="bulleted-list"><li style="list-style-type:disc"><a href="https://courses.nvidia.com/certificates/d249401389b24889aa29bc5a6ccd7cea">Fundamentals of Accelerated Computing with CUDA C/C++</a></li></ul><ul id="61885202-55d5-4e5c-bfad-e5fcbf8ec2cf" class="bulleted-list"><li style="list-style-type:disc">Engineer Information Processing</li></ul><ul id="bc90a17b-18d1-4247-a3a2-01ab3f6defa5" class="bulleted-list"><li style="list-style-type:disc">OPIc (Intermediate High)</li></ul><ul id="8dd18ed1-e1d9-4ed6-9c44-ffda88afd167" class="bulleted-list"><li style="list-style-type:disc">Korean History Proficiency Test Grade 1</li></ul><ul id="fbb80fbf-840f-4b2d-ac07-7b44c3a8bc5e" class="bulleted-list"><li style="list-style-type:disc">Craftsman Cook, Western Food</li></ul><ul id="e57ec02a-5366-415d-84ff-f16caccec835" class="bulleted-list"><li style="list-style-type:disc">Advanced Open Water Diver</li></ul><p id="5e2c2606-19b7-4253-abf8-0afe44d957fc" class="">
-</p><hr id="bd9b35c5-83b3-4daf-80a3-9dadb0f16889"/></div></article><script type="text/javascript" src="my.js"></script></body></html>
+    /* cspell:disable-file */
+    /* webkit printing magic: print all background colors */
+    html {
+        -webkit-print-color-adjust: exact;
+    }
+    * {
+        box-sizing: border-box;
+        -webkit-print-color-adjust: exact;
+    }
+    
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    @media only screen {
+        body {
+            margin: 2em auto;
+            max-width: 900px;
+            color: rgb(55, 53, 47);
+        }
+    }
+    
+    body {
+        line-height: 1.5;
+        white-space: pre-wrap;
+    }
+    
+    a,
+    a.visited {
+        color: inherit;
+        text-decoration: underline;
+    }
+    
+    .pdf-relative-link-path {
+        font-size: 80%;
+        color: #444;
+    }
+    
+    h1,
+    h2,
+    h3 {
+        letter-spacing: -0.01em;
+        line-height: 1.2;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+    
+    .page-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 0.75em;
+    }
+    
+    h1 {
+        font-size: 1.875rem;
+        margin-top: 1.875rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+        margin-top: 1.25rem;
+    }
+    
+    .source {
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        padding: 1.5em;
+        word-break: break-all;
+    }
+    
+    .callout {
+        border-radius: 3px;
+        padding: 1rem;
+    }
+    
+    figure {
+        margin: 1.25em 0;
+        page-break-inside: avoid;
+    }
+    
+    figcaption {
+        opacity: 0.5;
+        font-size: 85%;
+        margin-top: 0.5em;
+    }
+    
+    mark {
+        background-color: transparent;
+    }
+    
+    .indented {
+        padding-left: 1.5em;
+    }
+    
+    hr {
+        background: transparent;
+        display: block;
+        width: 100%;
+        height: 1px;
+        visibility: visible;
+        border: none;
+        border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+    }
+    
+    img {
+        max-width: 100%;
+    }
+    
+    @media only print {
+        img {
+            max-height: 100vh;
+            object-fit: contain;
+        }
+    }
+    
+    @page {
+        margin: 1in;
+    }
+    
+    .collection-content {
+        font-size: 0.875rem;
+    }
+    
+    .column-list {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .column {
+        padding: 0 1em;
+    }
+    
+    .column:first-child {
+        padding-left: 0;
+    }
+    
+    .column:last-child {
+        padding-right: 0;
+    }
+    
+    .table_of_contents-item {
+        display: block;
+        font-size: 0.875rem;
+        line-height: 1.3;
+        padding: 0.125rem;
+    }
+    
+    .table_of_contents-indent-1 {
+        margin-left: 1.5rem;
+    }
+    
+    .table_of_contents-indent-2 {
+        margin-left: 3rem;
+    }
+    
+    .table_of_contents-indent-3 {
+        margin-left: 4.5rem;
+    }
+    
+    .table_of_contents-link {
+        text-decoration: none;
+        opacity: 0.7;
+        border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+    }
+    
+    table,
+    th,
+    td {
+        border: 1px solid rgba(55, 53, 47, 0.09);
+        border-collapse: collapse;
+    }
+    
+    table {
+        border-left: none;
+        border-right: none;
+    }
+    
+    th,
+    td {
+        font-weight: normal;
+        padding: 0.25em 0.5em;
+        line-height: 1.5;
+        min-height: 1.5em;
+        text-align: left;
+    }
+    
+    th {
+        color: rgba(55, 53, 47, 0.6);
+    }
+    
+    ol,
+    ul {
+        margin: 0;
+        margin-block-start: 0.6em;
+        margin-block-end: 0.6em;
+    }
+    
+    li > ol:first-child,
+    li > ul:first-child {
+        margin-block-start: 0.6em;
+    }
+    
+    ul > li {
+        list-style: disc;
+    }
+    
+    ul.to-do-list {
+        padding-inline-start: 0;
+    }
+    
+    ul.to-do-list > li {
+        list-style: none;
+    }
+    
+    .to-do-children-checked {
+        text-decoration: line-through;
+        opacity: 0.375;
+    }
+    
+    ul.toggle > li {
+        list-style: none;
+    }
+    
+    ul {
+        padding-inline-start: 1.7em;
+    }
+    
+    ul > li {
+        padding-left: 0.1em;
+    }
+    
+    ol {
+        padding-inline-start: 1.6em;
+    }
+    
+    ol > li {
+        padding-left: 0.2em;
+    }
+    
+    .mono ol {
+        padding-inline-start: 2em;
+    }
+    
+    .mono ol > li {
+        text-indent: -0.4em;
+    }
+    
+    .toggle {
+        padding-inline-start: 0em;
+        list-style-type: none;
+    }
+    
+    /* Indent toggle children */
+    .toggle > li > details {
+        padding-left: 1.7em;
+    }
+    
+    .toggle > li > details > summary {
+        margin-left: -1.1em;
+    }
+    
+    .selected-value {
+        display: inline-block;
+        padding: 0 0.5em;
+        background: rgba(206, 205, 202, 0.5);
+        border-radius: 3px;
+        margin-right: 0.5em;
+        margin-top: 0.3em;
+        margin-bottom: 0.3em;
+        white-space: nowrap;
+    }
+    
+    .collection-title {
+        display: inline-block;
+        margin-right: 1em;
+    }
+    
+    .page-description {
+        margin-bottom: 2em;
+    }
+    
+    .simple-table {
+        margin-top: 1em;
+        font-size: 0.875rem;
+        empty-cells: show;
+    }
+    .simple-table td {
+        height: 29px;
+        min-width: 120px;
+    }
+    
+    .simple-table th {
+        height: 29px;
+        min-width: 120px;
+    }
+    
+    .simple-table-header-color {
+        background: rgb(247, 246, 243);
+        color: black;
+    }
+    .simple-table-header {
+        font-weight: 500;
+    }
+    
+    time {
+        opacity: 0.5;
+    }
+    
+    .icon {
+        display: inline-block;
+        max-width: 1.2em;
+        max-height: 1.2em;
+        text-decoration: none;
+        vertical-align: text-bottom;
+        margin-right: 0.5em;
+    }
+    
+    img.icon {
+        border-radius: 3px;
+    }
+    
+    .user-icon {
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 100%;
+        margin-right: 0.5rem;
+    }
+    
+    .user-icon-inner {
+        font-size: 0.8em;
+    }
+    
+    .text-icon {
+        border: 1px solid #000;
+        text-align: center;
+    }
+    
+    .page-cover-image {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        max-height: 30vh;
+    }
+    
+    .page-header-icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .page-header-icon-with-cover {
+        margin-top: -0.72em;
+        margin-left: 0.07em;
+    }
+    
+    .page-header-icon img {
+        border-radius: 3px;
+    }
+    
+    .link-to-page {
+        margin: 1em 0;
+        padding: 0;
+        border: none;
+        font-weight: 500;
+    }
+    
+    p > .user {
+        opacity: 0.5;
+    }
+    
+    td > .user,
+    td > time {
+        white-space: nowrap;
+    }
+    
+    input[type="checkbox"] {
+        transform: scale(1.5);
+        margin-right: 0.6em;
+        vertical-align: middle;
+    }
+    
+    p {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    
+    .image {
+        border: none;
+        margin: 1.5em 0;
+        padding: 0;
+        border-radius: 0;
+        text-align: center;
+    }
+    
+    .code,
+    code {
+        background: rgba(135, 131, 120, 0.15);
+        border-radius: 3px;
+        padding: 0.2em 0.4em;
+        border-radius: 3px;
+        font-size: 85%;
+        tab-size: 2;
+    }
+    
+    code {
+        color: #eb5757;
+    }
+    
+    .code {
+        padding: 1.5em 1em;
+    }
+    
+    .code-wrap {
+        white-space: pre-wrap;
+        word-break: break-all;
+    }
+    
+    .code > code {
+        background: none;
+        padding: 0;
+        font-size: 100%;
+        color: inherit;
+    }
+    
+    blockquote {
+        font-size: 1.25em;
+        margin: 1em 0;
+        padding-left: 1em;
+        border-left: 3px solid rgb(55, 53, 47);
+    }
+    
+    .bookmark {
+        text-decoration: none;
+        max-height: 8em;
+        padding: 0;
+        display: flex;
+        width: 100%;
+        align-items: stretch;
+    }
+    
+    .bookmark-title {
+        font-size: 0.85em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 1.75em;
+        white-space: nowrap;
+    }
+    
+    .bookmark-text {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .bookmark-info {
+        flex: 4 1 180px;
+        padding: 12px 14px 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .bookmark-image {
+        width: 33%;
+        flex: 1 1 180px;
+        display: block;
+        position: relative;
+        object-fit: cover;
+        border-radius: 1px;
+    }
+    
+    .bookmark-description {
+        color: rgba(55, 53, 47, 0.6);
+        font-size: 0.75em;
+        overflow: hidden;
+        max-height: 4.5em;
+        word-break: break-word;
+    }
+    
+    .bookmark-href {
+        font-size: 0.75em;
+        margin-top: 0.25em;
+    }
+    
+    .sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+    .code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+    .serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+    .mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+    .pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+    .pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+    .pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+    .pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+    .pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+    .pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+    .pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+    .pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+    .pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+    .pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+    .pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+    .pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+    .pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+    .pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+    .pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+    .pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+    .highlight-default {
+        color: rgba(55, 53, 47, 1);
+    }
+    .highlight-gray {
+        color: rgba(120, 119, 116, 1);
+        fill: rgba(120, 119, 116, 1);
+    }
+    .highlight-brown {
+        color: rgba(159, 107, 83, 1);
+        fill: rgba(159, 107, 83, 1);
+    }
+    .highlight-orange {
+        color: rgba(217, 115, 13, 1);
+        fill: rgba(217, 115, 13, 1);
+    }
+    .highlight-yellow {
+        color: rgba(203, 145, 47, 1);
+        fill: rgba(203, 145, 47, 1);
+    }
+    .highlight-teal {
+        color: rgba(68, 131, 97, 1);
+        fill: rgba(68, 131, 97, 1);
+    }
+    .highlight-blue {
+        color: rgba(51, 126, 169, 1);
+        fill: rgba(51, 126, 169, 1);
+    }
+    .highlight-purple {
+        color: rgba(144, 101, 176, 1);
+        fill: rgba(144, 101, 176, 1);
+    }
+    .highlight-pink {
+        color: rgba(193, 76, 138, 1);
+        fill: rgba(193, 76, 138, 1);
+    }
+    .highlight-red {
+        color: rgba(212, 76, 71, 1);
+        fill: rgba(212, 76, 71, 1);
+    }
+    .highlight-default_background {
+        color: rgba(55, 53, 47, 1);
+    }
+    .highlight-gray_background {
+        background: rgba(241, 241, 239, 1);
+    }
+    .highlight-brown_background {
+        background: rgba(244, 238, 238, 1);
+    }
+    .highlight-orange_background {
+        background: rgba(251, 236, 221, 1);
+    }
+    .highlight-yellow_background {
+        background: rgba(251, 243, 219, 1);
+    }
+    .highlight-teal_background {
+        background: rgba(237, 243, 236, 1);
+    }
+    .highlight-blue_background {
+        background: rgba(231, 243, 248, 1);
+    }
+    .highlight-purple_background {
+        background: rgba(244, 240, 247, 0.8);
+    }
+    .highlight-pink_background {
+        background: rgba(249, 238, 243, 0.8);
+    }
+    .highlight-red_background {
+        background: rgba(253, 235, 236, 1);
+    }
+    .block-color-default {
+        color: inherit;
+        fill: inherit;
+    }
+    .block-color-gray {
+        color: rgba(120, 119, 116, 1);
+        fill: rgba(120, 119, 116, 1);
+    }
+    .block-color-brown {
+        color: rgba(159, 107, 83, 1);
+        fill: rgba(159, 107, 83, 1);
+    }
+    .block-color-orange {
+        color: rgba(217, 115, 13, 1);
+        fill: rgba(217, 115, 13, 1);
+    }
+    .block-color-yellow {
+        color: rgba(203, 145, 47, 1);
+        fill: rgba(203, 145, 47, 1);
+    }
+    .block-color-teal {
+        color: rgba(68, 131, 97, 1);
+        fill: rgba(68, 131, 97, 1);
+    }
+    .block-color-blue {
+        color: rgba(51, 126, 169, 1);
+        fill: rgba(51, 126, 169, 1);
+    }
+    .block-color-purple {
+        color: rgba(144, 101, 176, 1);
+        fill: rgba(144, 101, 176, 1);
+    }
+    .block-color-pink {
+        color: rgba(193, 76, 138, 1);
+        fill: rgba(193, 76, 138, 1);
+    }
+    .block-color-red {
+        color: rgba(212, 76, 71, 1);
+        fill: rgba(212, 76, 71, 1);
+    }
+    .block-color-default_background {
+        color: inherit;
+        fill: inherit;
+    }
+    .block-color-gray_background {
+        background: rgba(241, 241, 239, 1);
+    }
+    .block-color-brown_background {
+        background: rgba(244, 238, 238, 1);
+    }
+    .block-color-orange_background {
+        background: rgba(251, 236, 221, 1);
+    }
+    .block-color-yellow_background {
+        background: rgba(251, 243, 219, 1);
+    }
+    .block-color-teal_background {
+        background: rgba(237, 243, 236, 1);
+    }
+    .block-color-blue_background {
+        background: rgba(231, 243, 248, 1);
+    }
+    .block-color-purple_background {
+        background: rgba(244, 240, 247, 0.8);
+    }
+    .block-color-pink_background {
+        background: rgba(249, 238, 243, 0.8);
+    }
+    .block-color-red_background {
+        background: rgba(253, 235, 236, 1);
+    }
+    .select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+    .select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+    .select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+    .select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+    .select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+    .select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+    .select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+    .select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+    .select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+    .select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+    .select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+    .select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+    .select-value-color-pageGlass { background-color: undefined; }
+    .select-value-color-washGlass { background-color: undefined; }
+    
+    .checkbox {
+        display: inline-flex;
+        vertical-align: text-bottom;
+        width: 16;
+        height: 16;
+        background-size: 16px;
+        margin-left: 2px;
+        margin-right: 5px;
+    }
+    
+    .checkbox-on {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+    }
+    
+    .checkbox-off {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+    }
+        
+    </style></head><body><article id="fc40db48-05e7-4de7-8220-9134611fb5bf" class="page sans"><header><h1 class="page-title">Hyunho Lim</h1><p class="page-description"></p></header><div class="page-body"><div id="16248e55-2eb4-80ee-ab7f-eb6d44a70f95" class="column-list"><div id="b1a9f6c9-2791-4577-b922-ec4494d382a6" style="width:112.5%" class="column"><p id="696eed2f-c829-4f51-80b2-ec3b46183d56" class="">
+    </p></div><div id="f61236c2-b28b-44a3-a65a-b0036f042e16" style="width:18.750000000000004%" class="column"><p id="479feff0-3bbd-431d-bad5-2d3997e3a6e3" class=""><a href="/">@ For Korean</a></p></div></div><hr id="0162b542-35ca-4fcd-801f-ed39adc5b675"/><div id="bec2fdc6-182b-4b86-bee7-e41e7c6d739a" class="column-list"><div id="a5b954b8-ee14-4d0f-a30c-b90bacb26b9d" style="width:33.33333333333333%" class="column"><figure id="6f8c9917-e419-4fb5-8028-4579ce2a1949" class="image"><a href="assets/profile.jpg"><img style="width:1534px" src="assets/profile.jpg"/></a></figure></div><div id="987c4a69-1cc1-4afd-8136-20bcffe8d3e7" style="width:33.333333333333336%" class="column"><h3 id="36011908-8bd2-4011-8438-f4b533628a28" class="">AI/ML Engineer</h3><p id="f9ce135b-a62c-41b5-bd82-1412981a407b" class="">
+    </p><p id="f53d26a4-1c57-428e-83b1-0a5aaf283edb" class="">
+    </p><p id="68a6ac97-2d3e-4703-9686-1cac13dface5" class=""><strong>🇰🇷 Seoul, South Korea</strong></p></div><div id="12dd2cd7-bcc1-41f6-a2ed-0f88e019104b" style="width:33.333333333333336%" class="column"><h3 id="48a6b76f-3e09-4cc7-8d2e-bd1541282f92" class="">Email</h3><p id="1c7040a5-b035-4051-bc37-116eb2b4ae1b" class=""><a href="mailto:gusghrlrl101@gmail.com">gusghrlrl101@gmail.com</a></p><p id="d6018c4f-acad-481b-ba56-104f9aed7884" class="">
+    </p><h3 id="597694ab-25d2-488f-b492-0cc7db9c1eb9" class="">Github</h3><p id="9ec69e1e-37ac-40de-b8c6-0412b4e82315" class=""><a href="https://github.com/gusghrlrl101">https://github.com/gusghrlrl101</a></p></div></div><hr id="844cefe3-7f39-4a98-8283-7a9f22b0eebd"/><h1 id="16248e55-2eb4-8097-b89b-cbb356ed7634" class=""><strong>🙋🏻‍♂️ Work Style</strong></h1><p id="16248e55-2eb4-803d-a63e-ee02cfbe591d" class=""><em>I’d like to share my signature approach to work over <span id="my-career-ages"></span> years as a developer.</em></p><p id="16248e55-2eb4-80f0-9132-eb65e10b5d09" class="">
+    </p><p id="16248e55-2eb4-80c9-9d4c-de7f5b280f39" class=""><strong>Fast, Accurate, and Smart.</strong></p><ul id="16248e55-2eb4-8065-b429-de607c5d7629" class="bulleted-list"><li style="list-style-type:disc">I prioritize efficiency, making the best use of available time and resources to achieve optimal results. I set clear priorities and automate repetitive tasks. I also leverage collaboration to create synergy and solve problems.</li></ul><p id="16248e55-2eb4-8054-b5c0-e783a1da2d0b" class=""><strong>Enjoy Work, Deliver Outstanding Results.</strong></p><ul id="16248e55-2eb4-802d-92aa-f2f7e3239343" class="bulleted-list"><li style="list-style-type:disc">I believe that working with enjoyment sparks creativity and deeper engagement. I maintain a positive attitude, finding ways to make every task enjoyable. I build a positive atmosphere with team members through constructive communication, moving forward together.</li></ul><p id="16248e55-2eb4-80ee-931f-e93242ccba4e" class=""><strong>Diverse Experiences, Unique Perspectives, Innovative Outcomes.</strong></p><ul id="16248e55-2eb4-802d-b6ed-df5aa0312258" class="bulleted-list"><li style="list-style-type:disc">I view diverse experiences as the cornerstone of growth and innovation. The insights and flexibility gained from challenges empower me to tackle problems effectively. I embrace new challenges without fear, always enjoying the process of learning and striving for growth.</li></ul><p id="16248e55-2eb4-80a5-8d26-e72585c04ce0" class=""><strong>Discover, Act, Solve.</strong></p><ul id="16248e55-2eb4-80ad-9d18-c9c29933d9be" class="bulleted-list"><li style="list-style-type:disc">Actively identifying and solving problems is key to uncovering hidden opportunities within the organization and creating new value. Therefore, I strive to deeply understand the goals of the business and the organization while proactively seeking out challenges to address.</li></ul><p id="01ef4fb6-a08c-4174-adb3-ef3c2e4f55ae" class="">
+    </p><hr id="8e617569-98ec-48f9-9099-07572e73ae9b"/><h1 id="16248e55-2eb4-8037-8b34-f7d0edf2acf4" class=""><strong>📚 Skills for Achieving Goals</strong></h1><p id="16248e55-2eb4-808a-838a-da0b6adb2841" class=""><em>Aspiring to become a </em><em><strong>versatile developer</strong></em><em> proficient in various fields, I aim to grow as an expert specializing in </em><em><strong>AI technologies</strong></em><em>. Below are the skills I am consistently developing to achieve these goals.</em></p><p id="16248e55-2eb4-80bf-8024-c2703006d8ac" class="">
+    </p><p id="16248e55-2eb4-804d-af4d-e4b9210babc2" class=""><strong>Key Domains</strong>: ML/AI, MLOps, Data Engineering</p><p id="16248e55-2eb4-809e-8444-c20668f65e8b" class=""><strong>Tech Stack</strong>: Python, Kubernetes, MLFlow, BentoML, Airflow <a href="https://stackshare.io/gusghrlrl101/my-stack">@Detail</a></p><p id="16248e55-2eb4-8046-a8fd-e1171b718094" class=""><strong>Recent Interests</strong>: ML Workbench, Recommender System</p><p id="1da8c3c6-911b-479f-ac8b-b1602d04f5c4" class="">
+    </p><hr id="78391061-06b5-4c05-8283-c09c3d6ca748"/><h1 id="16248e55-2eb4-8096-a763-f1daa318c20b" class=""><strong>👨🏻‍💻 Career Overview</strong></h1><p id="16248e55-2eb4-80ab-82b2-f0f803b2fe88" class=""><em>My career is not just a collection of job titles but a record of growth through experience. Here’s a brief introduction to the journey that shaped who I am today.</em></p><p id="16248e55-2eb4-801e-a9f8-c5b5f63e2081" class="">
+    </p><h2 id="5efeb171-1282-487d-b463-824bf7ba332b" class=""><a href="https://www.woowahan.com/">Woowa Bros.</a></h2><p id="16248e55-2eb4-80d3-a8c6-c45492b67b1c" class=""><strong>AI Division, AI Platform Team</strong></p><div id="2c2dfc20-af52-439f-93f7-10d96a430250" class="column-list"><div id="6313db31-9b80-47b5-9a30-d806a8c326a7" style="width:50%" class="column"><p id="16248e55-2eb4-80e1-8f90-c8cf5efd3ed5" class=""><strong>MLOps Engineer </strong><em>(Automation of AI Training/Deployment)</em></p><p id="16248e55-2eb4-80f6-bb7a-daad66345fc1" class=""><em><mark class="highlight-gray"><strong>June 2022 – Present (<span id="my-current-company-years"></span> years <span id="my-current-company-months"></span> months)</strong></mark></em></p></div><div id="6bceb4fe-0d35-475b-b904-d22d2a4364eb" style="width:50%" class="column"><p id="16248e55-2eb4-80df-9ecf-ebc295bd81aa" class="">At Woowa Bros., I have been developing an AI platform that enables seamless integration of AI services into various products.</p><p id="16248e55-2eb4-80f1-9879-e28e7dd086b0" class="">I expanded my expertise across the entire AI/ML lifecycle, from model training to production deployment.</p><p id="16248e55-2eb4-8046-ae2d-e28c795ee2fe" class="">I took a proactive approach to identifying tasks, led team projects, and gained valuable experience in system design and operations.</p></div></div><p id="bea7f36c-0a52-416e-87fc-7f0687d91401" class="">
+    </p><h2 id="658381b9-7b4a-48b8-8ada-62013ade439e" class=""><strong><a href="https://www.kakaocorp.com/page/?lang=ENG">Kakao</a></strong><strong> &amp; </strong><strong><a href="https://www.kakaoenterprise.com">Kakao Enterprise</a></strong></h2><p id="97da16c2-bd85-4303-8503-5cea76efce77" class=""><strong>AI Lab, Vision Team</strong></p><div id="9ed3a5ae-8f6f-497f-b3dc-481a7575e973" class="column-list"><div id="521996ed-00db-4026-9134-2072ee0a67b9" style="width:50%" class="column"><p id="16248e55-2eb4-80bf-a805-f3be888aba55" class=""><strong>Machine Learning Engineer </strong><em>(Enhancing AI Inference)</em></p><p id="16248e55-2eb4-80dd-b90d-ecbfc311fcb3" class=""><em><mark class="highlight-gray"><strong>June 2019 – June 2022 (3 years)</strong></mark></em></p><p id="16248e55-2eb4-8091-bc06-deead51c2a5c" class="">
+    </p></div><div id="511e5004-03ec-44f3-aa8b-e5e70fd1087e" style="width:50%" class="column"><p id="16248e55-2eb4-807b-a7e4-dd56fb0a6111" class="">At Kakao’s AI Lab, I was responsible for productizing AI models developed through research.</p><p id="16248e55-2eb4-80dc-8783-d4fa47e2d99b" class="">I focused on building inference environments for AI models, gaining hands-on experience across the AI domain.</p><p id="16248e55-2eb4-80d4-803e-db3ff6e05b51" class="">I honed my skills in designing and developing small-scale systems while concentrating on delivering assigned tasks with precision.</p></div></div><p id="8bb712b9-45c0-4a70-8e13-6dbd75b28353" class="">
+    </p><hr id="adaa019b-ffba-4ddf-8b41-c44352736b18"/><h1 id="16248e55-2eb4-80fa-93c8-f02bbe82e6f1" class=""><strong>💻 Projects</strong></h1><p id="16248e55-2eb4-8070-a640-e333925e550f" class=""><em>I have listed projects that I took the lead on, focusing primarily on large-scale initiatives.<br/>The table below highlights the challenges faced, the solutions implemented, and the outcomes achieved.<br/></em></p><p id="16248e55-2eb4-808c-94d1-ddf0423e9a3d" class="">
+    </p><h2 id="16248e55-2eb4-801c-8fcc-d5fc021407cc" class=""><strong>Configuration of AI Platform Serving Environment</strong></h2><div id="16248e55-2eb4-80fc-ad26-d4186c8a8ded" class="column-list"><div id="16248e55-2eb4-80cf-b77e-e100000d4547" style="width:93.75%" class="column"><p id="16248e55-2eb4-80ee-bf43-d9f020876741" class="">Designed and developed an automated environment for real-time serving of AI models.</p></div><div id="16248e55-2eb4-8043-9f4b-eaf0b4a826a1" style="width:37.5%" class="column"><p id="16248e55-2eb4-8041-b085-e8037d6c9a3a" class=""><em><mark class="highlight-gray">Woowa Bros.<br/>June 2023 – June 2024<br/></mark></em></p></div></div><table id="16248e55-2eb4-801c-af50-e4c81c8e22e4" class="simple-table"><tbody><tr id="29dfa0e8-1631-4895-8c99-72ab33073efd"><th id="oCfM" class="simple-table-header-color simple-table-header" style="width:95px"><strong>Challenges</strong></th><td id="{rZu" class="" style="width:628px">Previously, there was no established environment for serving AI models in real-time (via APIs), which required many tasks to be performed manually. With numerous upcoming projects requiring real-time requests, the need for an automated serving environment became apparent. I proposed and initiated this project to address the issue.</td></tr><tr id="ed1b3e70-86ad-4dc1-b191-a7437732fb80"><th id="oCfM" class="simple-table-header-color simple-table-header" style="width:95px"><strong>Solutions</strong></th><td id="{rZu" class="" style="width:628px">Using BentoML, I built a simple and versatile real-time serving environment capable of supporting multiple frameworks. I integrated GitLab CI with ArgoCD to automate the deployment process. Additionally, I established a systematic version management policy and implemented a rapid rollback system to enhance stability. I also automated the creation of monitoring dashboards for each service and integrated an error tracking system to strengthen monitoring capabilities.</td></tr><tr id="a82ba274-cb59-4396-a4ae-7163b39c84e9"><th id="oCfM" class="simple-table-header-color simple-table-header" style="width:95px"><strong>Outcomes</strong></th><td id="{rZu" class="" style="width:628px">The serving process was reduced by 40%, significantly decreasing engineering resource demands and accelerating development speed. This allowed for faster adoption of services. Currently, 30 real-time services are stably handling around 2 billion requests per month, with an average peak of 5,000 requests per second.</td></tr></tbody></table><p id="16248e55-2eb4-8094-a087-e06f363a3b21" class="">
+    </p><h2 id="16248e55-2eb4-80be-aca2-ec04fc71c4f6" class=""><strong>Configuration of AI Platform Training/Batch Environment</strong></h2><div id="16248e55-2eb4-8082-af26-d5042a80f18c" class="column-list"><div id="c6a10704-4711-4a49-89e0-846bbf76a30a" style="width:106.25%" class="column"><p id="986606f1-b199-46fd-a076-0dd3d85615f6" class="">Designed and developed an environment to simplify the development of AI model training and batch processing tasks.</p></div><div id="c0364207-9a84-4607-8163-cbd90828c889" style="width:43.74999999999996%" class="column"><p id="af17d496-287f-448c-80c1-2713a6858ebd" class=""><em><mark class="highlight-gray">Woowa Bros.<br/>June 2022 – June 2023<br/></mark></em></p></div></div><table id="16248e55-2eb4-80c2-a872-cd4f0ee0b31f" class="simple-table"><tbody><tr id="c34c7a3e-8d2a-46f9-8b87-ee48afa441ec"><th id="oCfM" class="simple-table-header-color simple-table-header" style="width:95px"><strong>Challenges</strong></th><td id="{rZu" class="" style="width:628px">Previously, the lack of AI training and batch processing environments led to decreased efficiency. A solution was needed to address issues such as data management, pipeline construction, and environmental consistency.</td></tr><tr id="914f5268-8d35-4517-8de0-16b627ed738d"><th id="oCfM" class="simple-table-header-color simple-table-header" style="width:95px"><strong>Solutions</strong></th><td id="{rZu" class="" style="width:628px">I developed commonly used features as libraries and introduced a data management policy to improve development convenience. I also created a system where batch services could be easily generated by writing YAML files, enabling even non-developers to collaborate efficiently. Furthermore, I simplified the development process by aligning development and production environments using tools like MLFlow and Docker.</td></tr><tr id="209a3fa4-8239-4f64-9731-304215cc9e92"><th id="oCfM" class="simple-table-header-color simple-table-header" style="width:95px"><strong>Outcomes</strong></th><td id="{rZu" class="" style="width:628px">Reduced the training and batch process by 30% and 67%, respectively, significantly enhancing development speed and operational efficiency. Currently, 130 batch services are being managed stably.</td></tr></tbody></table><p id="16248e55-2eb4-8001-a135-f4aba6b5c52b" class="">
+    </p><h2 id="16248e55-2eb4-807e-92ba-d165d521d225" class=""><strong>Unmanned Convenience Store Project</strong></h2><div id="16248e55-2eb4-80da-be2d-e521f2f8e1dc" class="column-list"><div id="b395a0fe-e154-45ee-87ff-6b4014160189" style="width:106.25%" class="column"><p id="764c0edf-1b1b-4e7a-8a8d-33a4a84b452e" class="">Designed and developed an environment for integrating and inferring multiple AI models.</p></div><div id="f41d2286-0ac9-41c2-bafc-61ff45eee49c" style="width:43.75%" class="column"><p id="a98164c6-1b12-41ec-a96c-a8195a564bf3" class=""><em><mark class="highlight-gray">Kakao &amp; Kakao Enterprise<br/>June 2019 – June 2022<br/></mark></em></p></div></div><table id="16248e55-2eb4-80b5-b69c-d961cd035f53" class="simple-table"><tbody><tr id="6eab6dbb-940c-4cad-8849-0473da194674"><th id="oCfM" class="simple-table-header-color simple-table-header" style="width:95px"><strong>Challenges</strong></th><td id="{rZu" class="" style="width:628px">I was tasked with independently designing and building an integrated system for team research projects (e.g. human detection, pose estimation, object tracking). The system needed to support inference in two environments: edge devices and servers.</td></tr><tr id="43d43440-cc74-489f-8499-e571e4e9d9a7"><th id="oCfM" class="simple-table-header-color simple-table-header" style="width:95px"><strong>Solutions</strong></th><td id="{rZu" class="" style="width:628px">I achieved over a 3x speed improvement on edge devices by utilizing TensorRT conversion and CUDA acceleration, enabling real-time processing. For real-time video input, I accelerated processing with DeepStream and managed multiple camera inputs simultaneously. On the server side, I used infrastructures like Kafka, Redis, and InfluxDB to seamlessly connect data across modules.</td></tr><tr id="9b989291-5ad0-4c65-9f67-283ee40fe125"><th id="oCfM" class="simple-table-header-color simple-table-header" style="width:95px"><strong>Outcomes</strong></th><td id="{rZu" class="" style="width:628px">The company’s convenience store was transformed into an unmanned store, allowing real-time tracking of customer movements and purchased items. I developed a system capable of calculating and tracking real-time 3D coordinates using multiple standard cameras without relying on 3D cameras.</td></tr></tbody></table><p id="16248e55-2eb4-8042-8f1a-e55451ec4c76" class="">
+    </p><hr id="e89c2b1f-8fae-4d74-ab87-f46c34acaab7"/><h1 id="16248e55-2eb4-80c9-bee9-f60f7c830ad8" class=""><strong>🎖️ Activities</strong></h1><p id="16248e55-2eb4-8054-ad5a-da212e4c526b" class=""><em>I believe it is important not only to carry out tasks but also to </em><em><strong>actively share</strong></em><em> and exchange the knowledge gained from experiences. Therefore, I make an effort to document and share my experiences whenever possible.</em></p><p id="16248e55-2eb4-80b2-b8ab-d2b34cf8492e" class="">
+    </p><h2 id="16248e55-2eb4-8011-8a30-e634c0faf493" class="">Blog Posting</h2><div id="16248e55-2eb4-803f-bf4e-e05da5451583" class="column-list"><div id="6c7a7b90-941e-4f70-b8ca-356f4f7ba2fc" style="width:106.25%" class="column"><p id="70b91621-d642-47c5-9fda-9c3bb435fa2e" class=""><strong>Delivery Hero Tech Blog</strong></p></div><div id="8318914f-c59e-48a2-833b-e2943fe4771b" style="width:12.50000000000001%" class="column"><p id="9b8084f2-d7e8-4489-be4e-6f6abb770e00" class=""><em><mark class="highlight-gray">2024</mark></em></p></div></div><figure id="16248e55-2eb4-8056-af1d-ec0dacfae307"><a href="https://tech.deliveryhero.com/stable-ai-serving-system-with-a-touch-of-automation/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Stable AI Serving System, with a Touch of Automation</div><div class="bookmark-description">Introducing the automated system for reliably and swiftly serving AI services, developed by the AI Platform team at Woowa Brothers.</div></div><div class="bookmark-href"><img src="https://tech.deliveryhero.com/icons/icon-512x512.png?v=74d073494b20480aef546fe88e9dbf12" class="icon bookmark-icon"/>https://tech.deliveryhero.com/stable-ai-serving-system-with-a-touch-of-automation/</div></div><img src="https://tech-admin.deliveryhero.net/wp-content/uploads/2024/11/woow.png" class="bookmark-image"/></a></figure><p id="16248e55-2eb4-80b4-931d-f1e685fa854f" class="">
+    </p><div id="16248e55-2eb4-8048-bb16-ffad13cdbe1f" class="column-list"><div id="8e192283-9449-4d83-b751-78f58063b9a0" style="width:106.25%" class="column"><p id="bc769f13-976f-48d7-8fa7-d541c8ad66e3" class=""><strong>Woowa Tech Blog</strong></p></div><div id="36dc1345-6923-4b4d-85c5-f303bff3c408" style="width:12.5%" class="column"><p id="2fe402e3-a2c2-4f1d-b9b5-edf3482e6a90" class=""><em><mark class="highlight-gray">2024</mark></em></p></div></div><figure id="16248e55-2eb4-8038-915c-f58d53e97e09"><a href="https://techblog.woowahan.com/19548/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">제목은 안정적인 AI 서빙 시스템으로 하겠습니다. 근데 이제 자동화를 곁들인… | 우아한형제들 기술블로그</div><div class="bookmark-description">우아한형제들의 AI플랫폼에서 AI서비스를 빠르게 서빙하기 위한 자동화 시스템을 소개합니다. 이를 통해 모델 학습에만 집중하고 나머지 작업은 신경 쓰지 않아도 되도록 구성한 방법을 알아봅니다. 자동 배포부터 모니터링, 알림, 장애 대처까지 자세히 살펴보겠습니다.</div></div><div class="bookmark-href"><img src="https://techblog.woowahan.com/wp-content/uploads/2020/08/favicon.ico" class="icon bookmark-icon"/>https://techblog.woowahan.com/19548/</div></div><img src="https://techblog.woowahan.com/wp-content/uploads/2021/06/screenshot.jpg" class="bookmark-image"/></a></figure><p id="16248e55-2eb4-8019-87d7-f49e4db546c3" class="">
+    </p><h2 id="16248e55-2eb4-80ea-a951-e7c23462830d" class="">Conference Pesentation</h2><h3 id="16248e55-2eb4-80b2-9537-f3799664afb4" class="">Woowa Conference</h3><div id="16248e55-2eb4-8025-8ca9-f0b5d70d6fa1" class="column-list"><div id="052f015e-7e3e-47bc-99b1-c7b6cb8700b4" style="width:106.25%" class="column"><p id="6831078e-362e-4017-99fb-c8a54215a25d" class=""><em>Offline Conference Presentation - Approx. 1,500 Attendees</em></p></div><div id="d2983bea-3863-42c5-82c8-554acf4c88bb" style="width:12.5%" class="column"><p id="59ef2fe9-71a8-4be7-935a-2185272dd961" class=""><em><mark class="highlight-gray">2023</mark></em></p></div></div><figure id="16248e55-2eb4-80a6-86da-c6b82709cbe5"><a href="https://youtu.be/EYbgVVYhnes?si=vIfNdookzJxKt6zu" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">AI 서비스 자동화 공장 만들기 #우아콘2023 #우아한형제들</div><div class="bookmark-description">[WOOWACON2023 세션 다시보기]
+    
+    👉 세션 설명
+    
+    기술을 통해서 경쟁사들보다 한 발짝 더 앞서나가기 위한 우아한형제들의 AI플랫폼을 소개합니다.
+    품질 좋은 AI 서비스를 빠르게 개발할 수 있는 체력을 어떻게 키우면 좋을까요?
+    MLOps를 포함해 우아한형제들의 AI 서비스 개발 및 운영을 이야기합니다.ㅤ
+    ㅤ
+    👉 발표자 소개
+    
+    데이터사이언스팀 유이수
+    AI 서비스 공장 직원 1입니다. 더 번쩍번쩍한 공장을 만들기 위해 고민하고 있습니다.
+    
+    데이터사이언스팀 임현호
+    종합예술인이 되고 싶은 생활체육인 밖구석 개발자
+    
+    데이터사이언스팀 이준수
+    데이터사이언스팀을 리드하고 있는 소프트웨어 반지니어
+    
+    👍 추천 대상
+    
+    - 빠르게 AI 서비스를 만들고 싶은 분
+    - AI 서비스를 만드는 데 어려움이 있는 분
+    
+    🙋🏻‍♀️ 세션에 대해 궁금한 점이 있다면 dev_relations@woowahan.com 으로 문의주시기 바랍니다.</div></div><div class="bookmark-href"><img src="https://www.youtube.com/s/desktop/ceaca137/img/logos/favicon_144x144.png" class="icon bookmark-icon"/>https://youtu.be/EYbgVVYhnes?si=vIfNdookzJxKt6zu</div></div><img src="https://i.ytimg.com/vi/EYbgVVYhnes/maxresdefault.jpg" class="bookmark-image"/></a></figure><h3 id="16248e55-2eb4-807e-87f5-ff89b8be6778" class="">Woowa Tech Seminar</h3><div id="16248e55-2eb4-805e-a66f-f1d82c5f8532" class="column-list"><div id="e9e22dc8-04a7-4030-a7db-e2baa3fc3160" style="width:106.25%" class="column"><p id="fcc573ef-4cb4-4fbe-b744-cbac990c34bf" class=""><em>Online Live Seminar - Approx. 2,000 Viewers</em></p></div><div id="b7cb55f9-2c11-43ed-b139-e793234c9418" style="width:12.5%" class="column"><p id="03f1d366-05f0-413c-9cc3-d2c79f3dff6d" class=""><em><mark class="highlight-gray">2023</mark></em></p></div></div><figure id="16248e55-2eb4-8031-828a-c1d755b4e182"><a href="https://www.youtube.com/live/MA5A7Xqb-7U?si=vtCs54-VUJhkf7Ra" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">[우아한테크세미나] MLOps를 활용한 AI 서비스 개발 스토리</div><div class="bookmark-description">📪 7월 우아한테크세미나 만족도 조사 ~7월 27일까지! https://forms.gle/iMfug5nBLgKxyW4CA 📪 
+    
+    7월 주제는 &quot;MLOps를 활용한 AI 서비스 개발 스토리&quot;입니다.
+    
+    높은 품질의 AI 모델을 신속하게 개발하고, 지속적으로 운영 가능한 AI을 구축하기 위해선 MLOps(Machine Learning Operations)가 필요합니다. 7월 우아한테크세미나에서는 우아한형제들은 어떤 고민을 가지고 MLOps를 도입하였고, 어떤 구성의 MLOps를 갖추었는지에 대해 우아한형제들 개발자 세 분과 함께 이야기 나눠봅니다.
+    
+    📝 주요 내용
+    - 우아한형제들의 AI 서비스
+    - AI 서비스를 적용할 때의 어려움
+    - 이 어려움을 해결하기 위한 MLOps 구축
+    - 우아한형제들이 생각하는 MLOps
+    - MLOps를 이용한 서비스 개발 과정
+    - 참고 기술블로그 : [배민 앱에도 AI 서비스가? AI 서비스와 MLOps 도입기] https://techblog.woowahan.com/11582/
+    
+    👍추천 대상
+    - 인공지능 개발, 서비스 운영, 인프라 구성, 데이터 관리와 관련된 업무를 수행하는 분들
+    - AI, MLOps에 관심 있는 분들
+    
+    🎙️ 강연자
+    우아한형제들 이준수
+    우아한형제들에서 소프트웨어 엔지니어로 일하고 있습니다.
+    
+    우아한형제들 임현호
+    종합예술인이 되고 싶은 생활체육인
+    
+    우아한형제들 한상윤
+    데이터를 중심으로 대용량/실시간 처리에 관심이 많고 long run을 위한 long learn을 지향하는 소프트웨어 엔지니어입니다. 배우고 경험한 것을 정리하고 공유하는 것을 좋아합니다.
+    
+    ❤️ 우아한테크에 관심 있으시다면? 
+    - 매달 따끈따끈한 소식 놓치지 마세요! 우아한테크레터 구독하기: https://forms.gle/HpP9rCiBD3gaHKET7 
+    - 우아한형제들은 개발자 채용 중~! 채용 공고 보기: https://career.woowahan.com</div></div><div class="bookmark-href"><img src="https://www.youtube.com/s/desktop/ceaca137/img/logos/favicon_144x144.png" class="icon bookmark-icon"/>https://www.youtube.com/live/MA5A7Xqb-7U?si=vtCs54-VUJhkf7Ra</div></div><img src="https://i.ytimg.com/vi/MA5A7Xqb-7U/maxresdefault.jpg" class="bookmark-image"/></a></figure><h3 id="16248e55-2eb4-8061-b5c1-f6156fe7791c" class=""><strong>if kakao</strong></h3><div id="16248e55-2eb4-809e-8095-d3e67c45cd42" class="column-list"><div id="c1a910b0-b672-45d2-9663-4b5208409cf3" style="width:106.25%" class="column"><p id="5de3f71a-dcfa-4bbe-9375-8312c47a04aa" class="">Online Conference Presentation</p></div><div id="5fddb583-070d-4b39-9f97-4952cbf9dacd" style="width:12.499999999999991%" class="column"><p id="0cb35369-1579-4067-8793-b86aaa74cebb" class=""><em><mark class="highlight-gray">2020</mark></em></p></div></div><figure id="16248e55-2eb4-8056-b7a2-dff983124042"><a href="https://tv.kakao.com/channel/3693125/cliplink/414132079" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">무인 편의점 개발기 - Edge Device로 Object Tracking 시스템 구축하는 방법</div><div class="bookmark-description">제목 : 무인 편의점 개발기 - Edge Device로 Object Tracking 시스템 구축하는 방법  연사 : 임현호 Marvin / 카카오엔터프라이즈 Software engineer 안지운 Corey / 카카오엔터프라이즈 AI research engineer  Amazon을 포함해 많은 리테일 업체들이 관심을 가지고 있는 무인 상점을 구현하기 위해서는 다양한 기술요소들이 필요합니다. 입장한 사람이 누구인지 알기 위한 얼굴인식 기술부터, 입구에서부터 각 사람의 동선을 추적할 수 있는 tracking 기술, 어떤 상품을 집었는지를 알기 위한 무게센서와의 센서 퓨전 기술 등이 대표적입니다.  이 세션에서는 이 중 멀티미디어 처리 파트에서 개발한 tracking 기술에 대해서 소개하고, 이 기술을 실제 편의점과 유사하게 세팅된 공간에서 적용한 경험을 공유하고자 합니다. 또한 이러한 시스템을 엔비디아의 xavier라는 에지 디바이스 위에 구축하는 과정에서 마주쳤던 기술적인 어려움들과 극복 과정에서 배웠던 팁들도 함께 소개 드립니다.  #AI #DeepLearning #Tracking #무인상점</div></div><div class="bookmark-href"><img src="https://img1.kakaocdn.net/kakaotv/services/2020/icon/icon-180.png" class="icon bookmark-icon"/>https://tv.kakao.com/channel/3693125/cliplink/414132079</div></div><img src="http://img1.daumcdn.net/kakaotv/KAKAOACCOUNT/1075481472/thumb/20201117143438" class="bookmark-image"/></a></figure><p id="16248e55-2eb4-803e-8e44-ddd25ea00fa6" class="">
+    </p><hr id="16248e55-2eb4-80bf-b287-dba4e73c4704"/><h1 id="16248e55-2eb4-80bf-bf48-f8bb9ab586eb" class=""><strong>🌏 Open Source Contributions</strong></h1><p id="16248e55-2eb4-8015-9091-c7963acc6efe" class=""><em>Driven by a desire to see </em><em><strong>AI technology itself advance</strong></em><em>, I actively contribute to open source projects, even outside of my regular work responsibilities.</em></p><p id="16248e55-2eb4-8071-a327-ee7bfce57b69" class="">
+    </p><div id="16248e55-2eb4-8036-a1a2-cd46b44692d0" class="column-list"><div id="86af7444-0e38-4987-a394-bfb06ad4cf0d" style="width:100%" class="column"><h3 id="252daeee-9bf1-4785-80e8-3655c63eec48" class=""><strong>AI Serving Framework</strong></h3><ul id="69705f7f-7632-400e-bb9a-98326708dad7" class="bulleted-list"><li style="list-style-type:disc"><a href="https://github.com/bentoml/BentoML/pull/4682">BentoML</a></li></ul><p id="16248e55-2eb4-80f8-9cfd-c747c320138c" class="">
+    </p><h3 id="0e346bcb-b8fb-48ca-8422-a56590a9148f" class=""><strong>AI Training Framework</strong></h3><ul id="3244db50-1558-4df4-ab73-8c72349b895a" class="bulleted-list"><li style="list-style-type:disc"><a href="https://github.com/mlflow/mlflow/pull/7933">MLFlow</a></li></ul></div><div id="089f615c-02d4-4c22-af68-768659633a00" style="width:100%" class="column"><h3 id="4911b594-4391-40e8-b7dc-5e6fc8904c9d" class=""><strong>Productivity Tools</strong></h3><ul id="514b9e60-2687-4db1-a727-633a7702d802" class="bulleted-list"><li style="list-style-type:disc"><a href="https://github.com/raycast/extensions/pull/4443">Raycast</a></li></ul><p id="16248e55-2eb4-805e-9626-e00b1af98023" class="">
+    </p><h3 id="14ce4025-c5a5-45c5-a227-3474caa4cb13" class=""><strong>Cross-Platform App &amp; Web Development Framework</strong></h3><ul id="1727d7dc-ecd3-4f3c-afa3-8356e9d25ee1" class="bulleted-list"><li style="list-style-type:disc"><a href="https://github.com/flutter/flutter/pull/63272">Flutter #3</a></li></ul><ul id="884c57d3-61ec-4700-bf1b-6cae5f139f37" class="bulleted-list"><li style="list-style-type:disc"><a href="https://github.com/flutter/flutter/pull/64639">Flutter #2</a></li></ul><ul id="4097d421-e3a7-47d9-b782-f40ccca80a38" class="bulleted-list"><li style="list-style-type:disc"><a href="https://github.com/flutter/flutter/pull/64746">Flutter #1</a></li></ul></div></div><p id="16248e55-2eb4-800b-9c2f-f61fa6736e5a" class="">
+    </p><hr id="16248e55-2eb4-8084-9ac0-cce8a1e2036d"/><h1 id="b3f4ccd5-782b-4ad6-a8f4-1619e4406fb5" class="">🏆 Awards</h1><p id="33bfd8e4-4540-4c5f-85f5-5dafed8e2fb6" class="">
+    </p><h2 id="7fd7a0a7-c513-41be-90bf-9d26135086cb" class="">Hyundai Mobis <strong>Algorithm Competition</strong></h2><div id="05f7b49e-acb3-40c5-aaff-22927cd079b9" class="column-list"><div id="0dae121a-e5e4-45fc-835e-7d180132a232" style="width:50%" class="column"><p id="3e14e900-5f8a-450c-98e9-1ac62a9ec9e3" class=""><strong>Excellence Prize</strong></p><p id="55cc4e0c-4906-4b44-b368-c8c24a6df356" class=""><em><mark class="highlight-gray">2022</mark></em></p><p id="bc40b8a6-6829-4a52-9505-af763c113213" class="">
+    </p></div><div id="3896a712-a14f-41eb-ad98-4286b9510aeb" style="width:50%" class="column"><p id="be8ff272-0155-46ab-8085-abd2757b8f34" class="">Participated in an <a href="https://hyundaimobis.goorm.io/assessment/31303/22-%ED%98%84%EB%8C%80%EB%AA%A8%EB%B9%84%EC%8A%A4-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C">algorithm competition</a> and received an Excellence Prize.</p></div></div><h2 id="886b0fe5-d8df-4a14-9ac5-dad5bf1f7f2c" class="">Open Source Contributon</h2><div id="d3a5324b-ab6f-447c-a894-01066bb5fa6a" class="column-list"><div id="24628cf3-827c-4159-bb58-68ef1bd7db8d" style="width:50%" class="column"><p id="dd36cacf-dcf0-4047-a6a6-91dcda6d98d1" class=""><strong>Grand Prize (Minister Award of Ministry of Science and ICT)</strong></p><p id="3242ade2-d35d-4951-ac69-c275c77a60be" class=""><em><mark class="highlight-gray">2020</mark></em></p><p id="16248e55-2eb4-8079-90db-d6441518b552" class="">
+    </p></div><div id="5414ed6a-a01a-4994-9b4a-7f738bd9a9b3" style="width:50%" class="column"><p id="e8af1b32-f712-442e-8d69-5f59b01f66b5" class="">Participation in <a href="https://www.oss.kr/contributhon_notice/show/bf01f047-eb8e-429a-a986-3560bf6d691e">open source contribute program</a> and won the Grand Prize.</p></div></div><hr id="2ac41bd6-a06f-4364-b236-dd29aabc3622"/><h1 id="5aca8c92-5965-4f84-ba89-30bbf37ae713" class="">🎓 Education</h1><p id="0c6c2167-759b-4472-87fd-05149cec9c7e" class="">
+    </p><div id="2bb3fecf-98d2-4d40-a3de-126e33b6f68d" class="column-list"><div id="c1adf51a-ab12-43e3-9a9e-5b9f58829f78" style="width:50.000000000000014%" class="column"><p id="2a4772d1-26d8-40c8-9a33-afa1c64e6430" class=""><strong>Inha University</strong></p><p id="68ee70f4-d104-43b0-996a-70746b1c5407" class=""><em><mark class="highlight-gray">2014 - 2020</mark></em></p></div><div id="92266575-18d7-4f4f-9379-cb0aa71d261e" style="width:50%" class="column"><p id="fdf0e394-fc11-4edb-9404-62d682d2ff01" class="">Bachelor, Information and Communication Engineering</p></div></div><p id="16248e55-2eb4-804c-be59-debc72a1f1f3" class="">
+    </p><p id="16248e55-2eb4-8045-ad65-d1442828e04f" class=""><strong>Sinsung High School</strong></p><p id="16248e55-2eb4-8007-82e2-eadbd3bb801f" class=""><em><mark class="highlight-gray">2011 - 2014</mark></em></p><p id="16248e55-2eb4-8051-9fa7-e7f97bde0177" class="">
+    </p><hr id="affe198f-a955-4c91-a76f-0aaa60232fcf"/><h1 id="16248e55-2eb4-80a4-aa0c-dd860efd648c" class=""><strong>📝 Certifications</strong></h1><p id="16248e55-2eb4-80d9-ac2b-f27d252fd148" class=""><em>Beyond development, I enjoy exploring </em><em><strong>a wide range of experiences</strong></em><em> in various fields during my free time.</em></p><p id="16248e55-2eb4-80b1-873c-d6e7fb5b19cd" class="">
+    </p><div id="16248e55-2eb4-8063-ab5e-d9692e6ec2f2" class="column-list"><div id="16248e55-2eb4-8002-beeb-fc2d79d0f9b6" style="width:100%" class="column"><h3 id="1baf48e7-7d16-4d0d-9950-e51bfd6c7e37" class="">Technical</h3><ul id="16248e55-2eb4-8068-8f68-cd3d0d41a6fa" class="bulleted-list"><li style="list-style-type:disc">Engineer Information Processing</li></ul><ul id="16248e55-2eb4-80af-bc2c-dafe31d3e291" class="bulleted-list"><li style="list-style-type:disc"><a href="https://courses.nvidia.com/certificates/d249401389b24889aa29bc5a6ccd7cea">Fundamentals of Accelerated Computing with CUDA C/C++</a></li></ul><ul id="16248e55-2eb4-8070-9891-fa2f746e7a6e" class="bulleted-list"><li style="list-style-type:disc">OPIc (Intermediate High)</li></ul></div><div id="16248e55-2eb4-8028-8525-e5215421c909" style="width:100%" class="column"><h3 id="16248e55-2eb4-80ca-aa5e-fc8bfb2e6fe3" class="">Others</h3><ul id="16248e55-2eb4-8064-b6b0-c29e7c11ad54" class="bulleted-list"><li style="list-style-type:disc">Korean History Proficiency Test Grade 1</li></ul><ul id="16248e55-2eb4-807b-94eb-c275c21b4b7d" class="bulleted-list"><li style="list-style-type:disc">Craftsman Cook, Western Food</li></ul><ul id="16248e55-2eb4-80ff-b157-f2455d2a7f8a" class="bulleted-list"><li style="list-style-type:disc">Craftsman Bartender</li></ul><ul id="16248e55-2eb4-800e-aad9-e42705af0826" class="bulleted-list"><li style="list-style-type:disc">Rescue Diver</li></ul></div></div><p id="5e2c2606-19b7-4253-abf8-0afe44d957fc" class="">
+    </p><hr id="bd9b35c5-83b3-4daf-80a3-9dadb0f16889"/></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span>
+    <script type="text/javascript" src="my.js"></script></body></html>
