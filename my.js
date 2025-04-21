@@ -24,7 +24,7 @@ function calculateDuration(startYear, startMonth) {
 }
 
 // set career age
-document.getElementById("my-career-ages").innerText = getCareerAge().toString();
+// document.getElementById("my-career-ages").innerText = getCareerAge().toString();
 
 // set current company age
 const { years, months } = calculateDuration(2022, 6); // 우아한형제들 2022년 6월 입사
