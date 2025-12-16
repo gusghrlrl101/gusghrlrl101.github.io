@@ -1,0 +1,353 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', Times, serif;
+  line-height: 1.4;
+  color: #000;
+  background-color: #f5f5f5;
+  font-size: 11pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Page layout - A4 paper simulation */
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 15mm 20mm;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Language-specific fonts */
+.page.lang-en {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.page.lang-kr {
+  font-family: 'Nanum Gothic', 'NanumGothic', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+}
+
+/* Header */
+.page-header {
+  text-align: center;
+  margin-bottom: 8pt;
+  padding-bottom: 8pt;
+  border-bottom: 1.5pt solid #000;
+}
+
+.title {
+  font-size: 24pt;
+  font-weight: 700;
+  margin-bottom: 4pt;
+  letter-spacing: 0.5pt;
+}
+
+.subtitle {
+  font-size: 11pt;
+  margin-bottom: 6pt;
+  font-weight: normal;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10pt;
+  flex-wrap: wrap;
+}
+
+.contact span {
+  color: #000;
+}
+
+.contact .separator {
+  color: #666;
+  margin: 0 8pt;
+}
+
+.contact a {
+  color: #000;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.contact a span {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.contact a:hover span {
+  color: #333;
+}
+
+/* Section */
+.section {
+  margin-bottom: 20pt;
+}
+
+.section-header {
+  margin-bottom: 8pt;
+}
+
+.section-title {
+  font-size: 12pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5pt;
+  padding-bottom: 2pt;
+  border-bottom: 1pt solid #000;
+  margin-bottom: 8pt;
+}
+
+.section-intro {
+  font-size: 10pt;
+  line-height: 1.4;
+  margin-bottom: 16pt;
+  text-align: justify;
+}
+
+/* Experience & Project items */
+.item-card {
+  margin-bottom: 14pt;
+  padding-bottom: 16pt;
+  border-bottom: 0.5pt solid #ccc;
+  page-break-inside: avoid;
+}
+
+.item-card:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.item-header {
+  margin-bottom: 4pt;
+}
+
+.item-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 2pt;
+}
+
+.item-title {
+  font-size: 11pt;
+  font-weight: 700;
+}
+
+.item-title a {
+  color: #000;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.item-title a:hover {
+  color: #333;
+}
+
+.item-period {
+  font-size: 10pt;
+  font-style: italic;
+  white-space: nowrap;
+}
+
+.item-subtitle-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 10pt;
+  margin-bottom: 10pt;
+}
+
+.item-subtitle {
+  font-style: italic;
+}
+
+.item-location {
+  font-size: 10pt;
+  color: #333;
+}
+
+.item-summary {
+  font-size: 10pt;
+  margin-bottom: 4pt;
+  line-height: 1.3;
+}
+
+/* Lists */
+.list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 10pt;
+}
+
+.list li {
+  position: relative;
+  padding-left: 12pt;
+  margin-bottom: 3pt;
+  line-height: 1.3;
+  text-align: justify;
+}
+
+.list li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+}
+
+/* Project details */
+.project-details {
+  font-size: 10pt;
+  margin-top: 4pt;
+}
+
+.detail-row {
+  margin-bottom: 3pt;
+  line-height: 1.3;
+  text-align: justify;
+}
+
+.detail-label {
+  font-weight: 700;
+  display: inline;
+}
+
+.detail-text {
+  display: inline;
+}
+
+.project-link {
+  margin-top: 6pt;
+  font-size: 10pt;
+  line-height: 1.3;
+}
+
+.project-link .link-label {
+  font-weight: 700;
+}
+
+.project-link a {
+  color: #000;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.project-link a:hover {
+  color: #333;
+}
+
+/* Skills section */
+.skills-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 6pt 12pt;
+  font-size: 10pt;
+  margin-top: 6pt;
+}
+
+.skill-label {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.skill-value {
+  line-height: 1.3;
+}
+
+/* Work style points - compact grid */
+.workstyle-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8pt;
+  margin-top: 6pt;
+}
+
+.workstyle-item {
+  font-size: 10pt;
+  page-break-inside: avoid;
+}
+
+.workstyle-title {
+  font-weight: 700;
+  margin-bottom: 2pt;
+  font-size: 10pt;
+}
+
+.workstyle-body {
+  line-height: 1.3;
+  text-align: justify;
+}
+
+/* Print optimization */
+@media print {
+  body {
+    background: white;
+  }
+  
+  .page {
+    margin: 0;
+    padding: 15mm 20mm;
+    max-width: 100%;
+  }
+  
+  .item-card,
+  .workstyle-item {
+    page-break-inside: avoid;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .page {
+    padding: 12pt;
+    max-width: 100%;
+  }
+  
+  .title {
+    font-size: 20pt;
+  }
+  
+  .contact {
+    flex-direction: column;
+    gap: 4pt;
+    align-items: center;
+  }
+  
+  .contact span:not(:last-child)::after,
+  .contact a:not(:last-child)::after {
+    content: "";
+    margin-left: 0;
+  }
+  
+  .item-title-row,
+  .item-subtitle-row {
+    flex-direction: column;
+    gap: 2pt;
+  }
+  
+  .item-period,
+  .item-location {
+    text-align: left;
+  }
+  
+  .workstyle-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 4pt;
+  }
+}
