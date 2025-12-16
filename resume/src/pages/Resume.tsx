@@ -1,6 +1,7 @@
 import "../styles/global.css";
 import { type Profile, type Language, type LocalizedText } from "../types";
 import { formatPeriod } from "../utils/dateUtils";
+import { Link } from "react-router-dom";
 
 interface ResumeProps {
   data: Profile;
@@ -40,6 +41,12 @@ function Resume({ data, lang, labels }: ResumeProps) {
           <a href={data.github} target="_blank" rel="noreferrer"><span>GitHub</span></a>
           <span className="separator"> | </span>
           <a href={data.linkedin} target="_blank" rel="noreferrer"><span>LinkedIn</span></a>
+          <span className="separator"> | </span>
+          {lang === 'kr' ? (
+            <Link to="/resume/en"><span>@ In English</span></Link>
+          ) : (
+            <Link to="/resume/kr"><span>@ In Korean</span></Link>
+          )}
         </div>
       </header>
 
@@ -88,7 +95,13 @@ function Resume({ data, lang, labels }: ResumeProps) {
             <div className="item-header">
               <div className="item-title-row">
                 <div className="item-title">
-                  {getText(exp.company)}
+                  {exp.companyUrl ? (
+                    <a href={exp.companyUrl} target="_blank" rel="noreferrer">
+                      {getText(exp.company)}
+                    </a>
+                  ) : (
+                    getText(exp.company)
+                  )}
                   {exp.team && ` · ${getText(exp.team)}`}
                 </div>
                 <div className="item-period">
@@ -109,6 +122,9 @@ function Resume({ data, lang, labels }: ResumeProps) {
                   <li key={idx}>{getText(bullet)}</li>
                 ))}
               </ul>
+            )}
+            {exp.reflection && (
+              <p className="item-reflection">{getText(exp.reflection)}</p>
             )}
           </div>
         ))}

@@ -10,6 +10,7 @@ export type WorkStylePoint = {
 
 export type Experience = {
   company: LocalizedText;
+  companyUrl?: string;
   team?: LocalizedText;
   role: LocalizedText;
   period: {
@@ -19,6 +20,7 @@ export type Experience = {
   location?: LocalizedText;
   summary?: LocalizedText;
   bullets?: LocalizedText[];
+  reflection?: LocalizedText;
 };
 
 export type Project = {

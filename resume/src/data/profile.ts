@@ -79,6 +79,7 @@ export const profile: Profile = {
         kr: "우아한형제들",
         en: "Woowa Brothers"
       },
+      companyUrl: "https://www.woowahan.com/",
       team: {
         kr: "AI실, AI플랫폼팀",
         en: "AI Division, AI Platform Team"
@@ -111,13 +112,18 @@ export const profile: Profile = {
           kr: "협업 문화와 시스템 체계를 주도하여 생산성과 품질 향상에 기여",
           en: "Contributed to productivity and quality improvement by leading collaboration culture and system structure"
         }
-      ]
+      ],
+      reflection: {
+        kr: "과제를 기술적으로 설계하고 이끌며, 요구사항을 구체화하고 이를 시스템 구조로 전환하는 역량을 키웠습니다.",
+        en: "Developed the ability to technically design and lead tasks, specify requirements, and convert them into system structures."
+      }
     },
     {
       company: {
         kr: "카카오 & 카카오엔터프라이즈",
         en: "Kakao & Kakao Enterprise"
       },
+      companyUrl: "https://www.kakaocorp.com/page/",
       team: {
         kr: "AI Lab, 비전팀",
         en: "AI Lab, Vision Team"
@@ -151,7 +157,11 @@ export const profile: Profile = {
           kr: "다양한 기술 요소를 실제 비즈니스 문제 해결에 적용하며 실전 감각 강화",
           en: "Strengthened practical sense by applying various technical elements to solve real business problems"
         }
-      ]
+      ],
+      reflection: {
+        kr: "AI 모델을 실제 서비스에 연결하는 실전 감각과, 문제 해결 역량을 탄탄하게 다졌습니다.",
+        en: "Solidly built practical sense in connecting AI models to actual services and problem-solving capabilities."
+      }
     }
   ],
   projectsIntro: {
