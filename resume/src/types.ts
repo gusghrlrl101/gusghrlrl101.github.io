@@ -37,6 +37,41 @@ export type Project = {
   links?: string[];
 };
 
+export type Activity = {
+  year: string;
+  title: LocalizedText;
+  url: string;
+};
+
+export type OpenSourceContribution = {
+  project: string;
+  description: LocalizedText;
+  contributions: {
+    title: LocalizedText;
+    url: string;
+  }[];
+};
+
+export type Award = {
+  title: LocalizedText;
+  organization: LocalizedText;
+  year: string;
+  description?: LocalizedText;
+  url?: string;
+};
+
+export type Education = {
+  school: LocalizedText;
+  period: string;
+  degree?: LocalizedText;
+  major?: LocalizedText;
+};
+
+export type Certification = {
+  name: LocalizedText;
+  category: LocalizedText;
+};
+
 export type Profile = {
   name: LocalizedText;
   title: LocalizedText;
@@ -54,6 +89,16 @@ export type Profile = {
   experiences: Experience[];
   projectsIntro: LocalizedText;
   projects: Project[];
+  activitiesIntro: LocalizedText;
+  activities: Activity[];
+  openSourceIntro: LocalizedText;
+  openSourceContributions: OpenSourceContribution[];
+  awardsIntro: LocalizedText;
+  awards: Award[];
+  educationIntro: LocalizedText;
+  education: Education[];
+  certificationsIntro: LocalizedText;
+  certifications: Certification[];
 };
 
 export type Language = 'kr' | 'en';

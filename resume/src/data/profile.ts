@@ -10,8 +10,8 @@ export const profile: Profile = {
     en: "AI/ML Engineer"
   },
   location: {
-    kr: "🇰🇷 서울, 대한민국",
-    en: "🇰🇷 Seoul, South Korea"
+    kr: "서울, 대한민국",
+    en: "Seoul, South Korea"
   },
   email: "gusghrlrl101@gmail.com",
   github: "https://github.com/gusghrlrl101",
@@ -325,6 +325,294 @@ export const profile: Profile = {
         en: "Implemented real-time 3D location tracking system with RGB cameras, converted in-house test space to unmanned convenience store and completed verification."
       },
       links: ["https://tv.kakao.com/channel/3693125/cliplink/414132079"]
+    }
+  ],
+  activitiesIntro: {
+    kr: "업무를 진행하는 데 그치지 않고 경험한 내용을 적극적으로 공유하며 교류하는 것이 중요하다고 생각하여, 틈틈이 기록을 남기려고 노력합니다.",
+    en: "I believe it's important not just to complete work, but to actively share and exchange experiences, so I strive to document them whenever possible."
+  },
+  activities: [
+    {
+      year: "2025",
+      title: {
+        kr: "기술블로그 - 전사 공통 GenAI 서비스 플랫폼 구축기",
+        en: "Tech Blog - Building Enterprise GenAI Service Platform"
+      },
+      url: "https://techblog.woowahan.com/23667/"
+    },
+    {
+      year: "2025",
+      title: {
+        kr: "회사 공식 기술 서적 수록 - 요즘 우아한 AI 개발",
+        en: "Published in Official Tech Book - Modern Woowa AI Development"
+      },
+      url: "https://www.google.co.kr/books/edition/%EC%9A%94%EC%A6%98_%EC%9A%B0%EC%95%84%ED%95%9C_AI_%EA%B0%9C%EB%B0%9C/gaBREQAAQBAJ"
+    },
+    {
+      year: "2024",
+      title: {
+        kr: "영문 기술블로그 - Stable AI Serving System with Automation",
+        en: "Tech Blog (EN) - Stable AI Serving System with Automation"
+      },
+      url: "https://deliveryhero.jobs/blog/stable-ai-serving-system-with-a-touch-of-automation/"
+    },
+    {
+      year: "2024",
+      title: {
+        kr: "기술블로그 - AI 모델 서빙 플랫폼 구축기",
+        en: "Tech Blog - Building AI Model Serving Platform"
+      },
+      url: "https://techblog.woowahan.com/19548/"
+    },
+    {
+      year: "2023",
+      title: {
+        kr: "컨퍼런스 오프라인 발표 - 우아한테크세미나",
+        en: "Conference Talk - Woowa Tech Seminar"
+      },
+      url: "https://www.youtube.com/watch?v=EYbgVVYhnes"
+    },
+    {
+      year: "2023",
+      title: {
+        kr: "온라인 테크 세미나 - AI 플랫폼 학습/배치 환경 구축",
+        en: "Online Tech Seminar - Building AI Platform Training/Batch Environment"
+      },
+      url: "https://www.youtube.com/live/MA5A7Xqb-7U"
+    },
+    {
+      year: "2020",
+      title: {
+        kr: "컨퍼런스 온라인 발표 - if(kakao)dev2020",
+        en: "Conference Talk - if(kakao)dev2020"
+      },
+      url: "https://tv.kakao.com/channel/3693125/cliplink/414132079"
+    }
+  ],
+  openSourceIntro: {
+    kr: "AI 자체의 기술이 발전하길 바라는 마음으로, 회사 업무를 떠나서라도 틈틈이 기여를 하고 싶은 마음이 있습니다.",
+    en: "With the hope that AI technology itself will advance, I have a desire to contribute whenever possible, even beyond company work."
+  },
+  openSourceContributions: [
+    {
+      project: "BentoML",
+      description: {
+        kr: "AI 서빙 프레임워크",
+        en: "AI Serving Framework"
+      },
+      contributions: [
+        {
+          title: {
+            kr: "서빙 상세 옵션 설정 기능 추가",
+            en: "Added detailed serving option configuration feature"
+          },
+          url: "https://github.com/bentoml/BentoML/pull/4682"
+        }
+      ]
+    },
+    {
+      project: "MLFlow",
+      description: {
+        kr: "AI 학습 프레임워크",
+        en: "AI Training Framework"
+      },
+      contributions: [
+        {
+          title: {
+            kr: "실험 이력 커스텀 링크 설정 기능 추가",
+            en: "Added custom link configuration for experiment history"
+          },
+          url: "https://github.com/mlflow/mlflow/pull/7933"
+        }
+      ]
+    },
+    {
+      project: "Raycast",
+      description: {
+        kr: "업무 향상 툴",
+        en: "Productivity Tool"
+      },
+      contributions: [
+        {
+          title: {
+            kr: "클립보드 복사/붙여넣기 선택 기능 추가",
+            en: "Added clipboard copy/paste selection feature"
+          },
+          url: "https://github.com/raycast/extensions/pull/4443"
+        }
+      ]
+    },
+    {
+      project: "Flutter",
+      description: {
+        kr: "앱&웹 공용 개발 프레임워크",
+        en: "Cross-platform App & Web Framework"
+      },
+      contributions: [
+        {
+          title: {
+            kr: "뒤로가기 버튼 오류 수정",
+            en: "Fixed back button error"
+          },
+          url: "https://github.com/flutter/flutter/pull/63272"
+        },
+        {
+          title: {
+            kr: "로딩중 배경색 오류 수정",
+            en: "Fixed loading background color error"
+          },
+          url: "https://github.com/flutter/flutter/pull/64639"
+        },
+        {
+          title: {
+            kr: "버튼 위치 오류 수정",
+            en: "Fixed button position error"
+          },
+          url: "https://github.com/flutter/flutter/pull/64746"
+        }
+      ]
+    }
+  ],
+  awardsIntro: {
+    kr: "기술 역량을 인정받아 여러 대회와 행사에서 수상한 경험이 있습니다.",
+    en: "Recognized for technical capabilities through awards at various competitions and events."
+  },
+  awards: [
+    {
+      title: {
+        kr: "현대모비스 알고리즘 경진대회 우수상",
+        en: "Hyundai Mobis Algorithm Competition Excellence Award"
+      },
+      organization: {
+        kr: "현대모비스",
+        en: "Hyundai Mobis"
+      },
+      year: "2022",
+      description: {
+        kr: "알고리즘 경진대회에 참가하여 우수상 수상",
+        en: "Participated in algorithm competition and won Excellence Award"
+      },
+      url: "https://hyundaimobis.goorm.io/assessment/31303/22-%ED%98%84%EB%8C%80%EB%AA%A8%EB%B9%84%EC%8A%A4-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C"
+    },
+    {
+      title: {
+        kr: "오픈소스 컨트리뷰톤 대상 (과학기술정보통신부장관상)",
+        en: "Open Source Contributhon Grand Prize (Minister of Science and ICT Award)"
+      },
+      organization: {
+        kr: "과학기술정보통신부",
+        en: "Ministry of Science and ICT"
+      },
+      year: "2020",
+      description: {
+        kr: "Open Source Contribute에 참가해 대상 수상",
+        en: "Participated in Open Source Contribute and won Grand Prize"
+      },
+      url: "https://www.oss.kr/index.php/ossca_notice/show/bf01f047-eb8e-429a-a986-3560bf6d691e"
+    }
+  ],
+  educationIntro: {
+    kr: "정보통신공학을 전공하며 컴퓨터 과학의 기초를 다졌습니다.",
+    en: "Built a foundation in computer science by majoring in Information and Communication Engineering."
+  },
+  education: [
+    {
+      school: {
+        kr: "인하대학교",
+        en: "Inha University"
+      },
+      period: "2014 ~ 2020",
+      degree: {
+        kr: "학사",
+        en: "Bachelor's Degree"
+      },
+      major: {
+        kr: "정보통신공학과",
+        en: "Information and Communication Engineering"
+      }
+    },
+    {
+      school: {
+        kr: "신성고등학교",
+        en: "Shinsung High School"
+      },
+      period: "2011 ~ 2014"
+    }
+  ],
+  certificationsIntro: {
+    kr: "개발 외에도 여러 가지에 관심이 많아 틈틈이 다방면으로 경험해보는 것을 좋아합니다.",
+    en: "I have a wide range of interests beyond development and enjoy experiencing various fields whenever possible."
+  },
+  certifications: [
+    {
+      name: {
+        kr: "정보처리기사",
+        en: "Engineer Information Processing"
+      },
+      category: {
+        kr: "기술 관련",
+        en: "Technical"
+      }
+    },
+    {
+      name: {
+        kr: "CUDA C/C++ 를 활용한 가속화 컴퓨팅 기초 강의",
+        en: "Fundamentals of Accelerated Computing with CUDA C/C++"
+      },
+      category: {
+        kr: "기술 관련",
+        en: "Technical"
+      }
+    },
+    {
+      name: {
+        kr: "OPIc Intermediate High",
+        en: "OPIc Intermediate High"
+      },
+      category: {
+        kr: "기술 관련",
+        en: "Technical"
+      }
+    },
+    {
+      name: {
+        kr: "한국사능력검정 1급",
+        en: "Korean History Proficiency Test Level 1"
+      },
+      category: {
+        kr: "기타",
+        en: "Others"
+      }
+    },
+    {
+      name: {
+        kr: "양식조리기능사",
+        en: "Western Cuisine Cook Certificate"
+      },
+      category: {
+        kr: "기타",
+        en: "Others"
+      }
+    },
+    {
+      name: {
+        kr: "조주기능사",
+        en: "Bartender Certificate"
+      },
+      category: {
+        kr: "기타",
+        en: "Others"
+      }
+    },
+    {
+      name: {
+        kr: "레스큐 다이버",
+        en: "Rescue Diver"
+      },
+      category: {
+        kr: "기타",
+        en: "Others"
+      }
     }
   ]
 };

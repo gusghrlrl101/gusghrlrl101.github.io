@@ -11,6 +11,11 @@ interface ResumeProps {
     skills: string;
     experience: string;
     projects: string;
+    activities: string;
+    openSource: string;
+    awards: string;
+    education: string;
+    certifications: string;
     mainDomains: string;
     techStack: string;
     recentInterests: string;
@@ -36,7 +41,7 @@ function Resume({ data, lang, labels }: ResumeProps) {
         <div className="contact">
           <span>{getText(data.location)}</span>
           <span className="separator"> | </span>
-          <span>{data.email}</span>
+          <a href={`mailto:${data.email}`}><span>{data.email}</span></a>
           <span className="separator"> | </span>
           <a href={data.github} target="_blank" rel="noreferrer"><span>GitHub</span></a>
           <span className="separator"> | </span>
@@ -180,6 +185,157 @@ function Resume({ data, lang, labels }: ResumeProps) {
             </div>
           </div>
         ))}
+      </section>
+
+      {/* Activities */}
+      <section className="section">
+        <div className="section-header">
+          <h2 className="section-title">{labels.activities}</h2>
+        </div>
+        <p className="section-intro">{getText(data.activitiesIntro)}</p>
+        <div className="activities-list">
+          {(() => {
+            const groupedByYear: Record<string, typeof data.activities> = {};
+            data.activities.forEach((activity) => {
+              if (!groupedByYear[activity.year]) {
+                groupedByYear[activity.year] = [];
+              }
+              groupedByYear[activity.year].push(activity);
+            });
+            
+            return Object.entries(groupedByYear)
+              .sort(([yearA], [yearB]) => Number(yearB) - Number(yearA))
+              .map(([year, activities]) => (
+                <div key={year} className="activity-year-group">
+                  <div className="activity-year-header">{year}</div>
+                  <div className="activity-year-items">
+                    {activities.map((activity, idx) => (
+                      <div key={idx} className="activity-item">
+                        <span className="activity-bullet">•</span>
+                        <a href={activity.url} target="_blank" rel="noreferrer" className="activity-link">
+                          {getText(activity.title)}
+                        </a>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ));
+          })()}
+        </div>
+      </section>
+
+      {/* Open Source Contributions */}
+      <section className="section">
+        <div className="section-header">
+          <h2 className="section-title">{labels.openSource}</h2>
+        </div>
+        <p className="section-intro">{getText(data.openSourceIntro)}</p>
+        <div className="opensource-list">
+          {data.openSourceContributions.map((oss, idx) => (
+            <div key={idx} className="opensource-project">
+              <div className="opensource-project-header">
+                <span className="opensource-project-name">{oss.project}</span>
+                <span className="opensource-project-desc"> · {getText(oss.description)}</span>
+              </div>
+              <div className="opensource-contributions">
+                {oss.contributions.map((contrib, cidx) => (
+                  <div key={cidx} className="opensource-item">
+                    <span className="opensource-bullet">•</span>
+                    <a href={contrib.url} target="_blank" rel="noreferrer" className="opensource-link">
+                      {getText(contrib.title)}
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Awards */}
+      <section className="section">
+        <div className="section-header">
+          <h2 className="section-title">{labels.awards}</h2>
+        </div>
+        <p className="section-intro">{getText(data.awardsIntro)}</p>
+        <div className="simple-list">
+          {data.awards.map((award, idx) => (
+            <div key={idx} className="simple-item">
+              <div className="simple-item-header">
+                {award.url ? (
+                  <a href={award.url} target="_blank" rel="noreferrer" className="simple-item-title-link">
+                    {getText(award.title)}
+                  </a>
+                ) : (
+                  <span className="simple-item-title">{getText(award.title)}</span>
+                )}
+                <span className="simple-item-year">{award.year}</span>
+              </div>
+              {award.description && (
+                <div className="simple-item-desc">{getText(award.description)}</div>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Education */}
+      <section className="section">
+        <div className="section-header">
+          <h2 className="section-title">{labels.education}</h2>
+        </div>
+        <p className="section-intro">{getText(data.educationIntro)}</p>
+        <div className="simple-list">
+          {data.education.map((edu, idx) => (
+            <div key={idx} className="simple-item">
+              <div className="simple-item-header">
+                <span className="simple-item-title">{getText(edu.school)}</span>
+                <span className="simple-item-year">{edu.period}</span>
+              </div>
+              {(edu.degree || edu.major) && (
+                <div className="simple-item-desc">
+                  {edu.degree && getText(edu.degree)}
+                  {edu.degree && edu.major && ', '}
+                  {edu.major && getText(edu.major)}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Certifications */}
+      <section className="section">
+        <div className="section-header">
+          <h2 className="section-title">{labels.certifications}</h2>
+        </div>
+        <p className="section-intro">{getText(data.certificationsIntro)}</p>
+        <div className="certifications-grid">
+          {(() => {
+            const groupedByCategory: Record<string, typeof data.certifications> = {};
+            data.certifications.forEach((cert) => {
+              const category = getText(cert.category);
+              if (!groupedByCategory[category]) {
+                groupedByCategory[category] = [];
+              }
+              groupedByCategory[category].push(cert);
+            });
+            
+            return Object.entries(groupedByCategory).map(([category, certs]) => (
+              <div key={category} className="cert-category">
+                <div className="cert-category-header">{category}</div>
+                <div className="cert-items">
+                  {certs.map((cert, idx) => (
+                    <div key={idx} className="cert-item">
+                      <span className="cert-bullet">•</span>
+                      <span className="cert-name">{getText(cert.name)}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ));
+          })()}
+        </div>
       </section>
     </main>
   );
