@@ -48,9 +48,9 @@ function Resume({ data, lang, labels }: ResumeProps) {
           <a href={data.linkedin} target="_blank" rel="noreferrer"><span>LinkedIn</span></a>
           <span className="separator"> | </span>
           {lang === 'kr' ? (
-            <Link to="/resume/en"><span>@ In English</span></Link>
+            <Link to="/en"><span>@ In English</span></Link>
           ) : (
-            <Link to="/resume/kr"><span>@ In Korean</span></Link>
+            <Link to="/kr"><span>@ In Korean</span></Link>
           )}
         </div>
       </header>
