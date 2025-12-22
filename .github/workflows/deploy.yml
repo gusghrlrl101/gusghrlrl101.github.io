@@ -47,13 +47,8 @@ jobs:
           cd resume
           npm run build
 
-      - name: Organize build files
-        run: |
-          # Homepage files are already in dist/
-          # Move resume build to dist/resume/
-          mv resume/dist dist/resume
-          # Copy CNAME for custom domain
-          cp CNAME dist/
+      - name: Copy CNAME
+        run: cp CNAME dist/
 
       - name: Setup Pages
         if: github.event_name != 'pull_request'
