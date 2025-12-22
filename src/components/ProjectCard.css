@@ -1,0 +1,124 @@
+.project-card {
+  display: block;
+  padding: 2rem;
+  border: 1px solid rgba(55, 53, 47, 0.09);
+  border-radius: 12px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+  position: relative;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  border-color: rgba(55, 53, 47, 0.16);
+}
+
+.project-card:hover .card-arrow {
+  transform: translateX(4px);
+}
+
+.card-content {
+  position: relative;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.card-title-en {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(55, 53, 47, 0.6);
+}
+
+.card-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(55, 53, 47, 0.8);
+  margin-bottom: 0.5rem;
+}
+
+.card-description-en {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: rgba(55, 53, 47, 0.5);
+  margin-bottom: 1rem;
+}
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: rgba(135, 131, 120, 0.1);
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: rgba(55, 53, 47, 0.7);
+}
+
+.card-arrow {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 1.5rem;
+  color: rgba(55, 53, 47, 0.3);
+  transition: all 0.2s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  .project-card {
+    background: #2a2a2a;
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .project-card:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  }
+
+  .card-title-en {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .card-description {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .card-description-en {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .tag {
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .card-arrow {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    padding: 1.5rem;
+  }
+
+  .card-arrow {
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+}

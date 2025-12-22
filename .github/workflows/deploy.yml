@@ -30,9 +30,14 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-          cache-dependency-path: resume/package-lock.json
 
-      - name: Install dependencies
+      - name: Install homepage dependencies
+        run: npm ci
+
+      - name: Build homepage
+        run: npm run build
+
+      - name: Install resume dependencies
         run: |
           cd resume
           npm ci
@@ -42,14 +47,13 @@ jobs:
           cd resume
           npm run build
 
-      - name: Copy static files
+      - name: Organize build files
         run: |
-          mkdir -p dist
-          cp index.html dist/
-          cp en.html dist/
-          cp my.js dist/
+          # Homepage files are already in dist/
+          # Move resume build to dist/resume/
+          mv resume/dist dist/resume
+          # Copy CNAME for custom domain
           cp CNAME dist/
-          cp -r assets dist/
 
       - name: Setup Pages
         if: github.event_name != 'pull_request'
