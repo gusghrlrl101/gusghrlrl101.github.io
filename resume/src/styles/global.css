@@ -23,6 +23,7 @@ body {
 /* Page layout - A4 paper simulation */
 .page {
   width: 210mm;
+  max-width: 100%;
   min-height: 297mm;
   padding: 15mm 20mm;
   background: white;
@@ -472,37 +473,15 @@ body {
 .certifications-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12pt;
+  gap: 3pt 12pt;
   margin-top: 6pt;
-}
-
-.cert-category {
-  page-break-inside: avoid;
-}
-
-.cert-category-header {
-  font-weight: 700;
-  font-size: 10pt;
-  margin-bottom: 4pt;
-  color: #000;
-}
-
-.cert-items {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
 }
 
 .cert-item {
   position: relative;
   padding-left: 12pt;
-  margin-bottom: 3pt;
   line-height: 1.3;
   font-size: 10pt;
-}
-
-.cert-item:last-child {
-  margin-bottom: 0;
 }
 
 .cert-bullet {
@@ -536,13 +515,23 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
   .page {
-    padding: 12pt;
-    max-width: 100%;
+    width: 100%;
+    padding: 16px;
+    box-shadow: none;
+    min-height: auto;
   }
   
   .title {
     font-size: 20pt;
+  }
+
+  .section-title {
+    font-size: 13pt;
   }
   
   .contact {
@@ -550,25 +539,28 @@ body {
     gap: 4pt;
     align-items: center;
   }
-  
-  .contact span:not(:last-child)::after,
-  .contact a:not(:last-child)::after {
-    content: "";
-    margin-left: 0;
+
+  .contact .separator {
+    display: none;
   }
   
   .item-title-row,
-  .item-subtitle-row {
+  .item-subtitle-row,
+  .simple-item-header {
     flex-direction: column;
     gap: 2pt;
+    align-items: flex-start;
   }
   
   .item-period,
-  .item-location {
+  .item-location,
+  .simple-item-year {
     text-align: left;
   }
   
-  .workstyle-grid {
+  .workstyle-grid,
+  .opensource-list,
+  .certifications-grid {
     grid-template-columns: 1fr;
   }
   
@@ -576,21 +568,13 @@ body {
     grid-template-columns: 1fr;
     gap: 4pt;
   }
-  
-  .opensource-list {
-    grid-template-columns: 1fr;
+
+  .skill-label {
+    font-weight: 700;
+    margin-top: 6pt;
   }
-  
-  .certifications-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .simple-item-header {
-    flex-direction: column;
-    gap: 2pt;
-  }
-  
-  .simple-item-year {
-    text-align: left;
+
+  .skill-label:first-child {
+    margin-top: 0;
   }
 }

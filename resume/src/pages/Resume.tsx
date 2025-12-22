@@ -311,30 +311,12 @@ function Resume({ data, lang, labels }: ResumeProps) {
         </div>
         <p className="section-intro">{getText(data.certificationsIntro)}</p>
         <div className="certifications-grid">
-          {(() => {
-            const groupedByCategory: Record<string, typeof data.certifications> = {};
-            data.certifications.forEach((cert) => {
-              const category = getText(cert.category);
-              if (!groupedByCategory[category]) {
-                groupedByCategory[category] = [];
-              }
-              groupedByCategory[category].push(cert);
-            });
-            
-            return Object.entries(groupedByCategory).map(([category, certs]) => (
-              <div key={category} className="cert-category">
-                <div className="cert-category-header">{category}</div>
-                <div className="cert-items">
-                  {certs.map((cert, idx) => (
-                    <div key={idx} className="cert-item">
-                      <span className="cert-bullet">•</span>
-                      <span className="cert-name">{getText(cert.name)}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ));
-          })()}
+          {data.certifications.map((cert, idx) => (
+            <div key={idx} className="cert-item">
+              <span className="cert-bullet">•</span>
+              <span className="cert-name">{getText(cert.name)}</span>
+            </div>
+          ))}
         </div>
       </section>
     </main>
