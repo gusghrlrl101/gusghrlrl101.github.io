@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Hyunho Lim | Portfolio</title>
+  <script>
+    // GitHub Pages SPA redirect
+    // 404 페이지에서 메인 페이지로 리디렉션하되, 경로 정보를 유지
+    const path = window.location.pathname;
+    const search = window.location.search;
+    const hash = window.location.hash;
+    
+    // /resume/ 경로는 별도 앱이므로 그대로 유지
+    if (path.startsWith('/resume')) {
+      // resume 앱의 404 처리
+      window.location.replace('/resume/' + search + hash);
+    } else {
+      // 메인 앱으로 리디렉션 (SPA 라우팅용)
+      sessionStorage.setItem('redirect', path + search + hash);
+      window.location.replace('/');
+    }
+  </script>
+</head>
+<body>
+</body>
+</html>
