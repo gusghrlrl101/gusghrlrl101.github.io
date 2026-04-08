@@ -96,17 +96,17 @@ export const profile: Profile = {
         en: "Seoul"
       },
       summary: {
-        kr: "AI를 다양한 서비스에 자연스럽게 적용할 수 있도록, 사내 공통 AI플랫폼을 개발하고 있습니다.",
-        en: "Developing an in-house common AI platform so that AI can be naturally applied to various services."
+        kr: "사내 공통 AI플랫폼을 구축하고, 최근에는 AI 기술을 활용한 서비스 개발에도 직접 참여하고 있습니다.",
+        en: "Built an in-house common AI platform, and recently expanded into direct AI service development."
       },
       bullets: [
         {
-          kr: "AI 모델 개발 - 프로덕션 환경 서비스 - 모니터링에 이르는 엔드투엔드 파이프라인 설계 및 운영",
-          en: "Design and operation of end-to-end pipelines from AI model development to production service and monitoring"
-        },
-        {
           kr: "팀 단위의 과제를 주도적으로 기획, 리드하며 기술적/조직적 역량 확보",
           en: "Proactively planned and led team-level tasks, securing technical and organizational capabilities"
+        },
+        {
+          kr: "플랫폼 구축에서 서비스 직접 개발까지 역할을 확장하며 비즈니스 문제 해결 경험 축적",
+          en: "Expanded role from platform building to direct service development, accumulating business problem-solving experience"
         },
         {
           kr: "협업 문화와 시스템 체계를 주도하여 생산성과 품질 향상에 기여",
@@ -114,8 +114,8 @@ export const profile: Profile = {
         }
       ],
       reflection: {
-        kr: "과제를 기술적으로 설계하고 이끌며, 요구사항을 구체화하고 이를 시스템 구조로 전환하는 역량을 키웠습니다.",
-        en: "Developed the ability to technically design and lead tasks, specify requirements, and convert them into system structures."
+        kr: "플랫폼 구축부터 서비스 개발까지 경험하며, 기술 설계와 비즈니스 문제 해결을 연결하는 역량을 키웠습니다.",
+        en: "Grew the ability to connect technical design with business problem-solving through experience spanning platform building to service development."
       }
     },
     {
