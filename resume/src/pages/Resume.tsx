@@ -147,8 +147,7 @@ function Resume({ data, lang, labels }: ResumeProps) {
               <div className="item-title-row">
                 <div className="item-title">{getText(project.title)}</div>
                 <div className="item-period">
-                  {project.period.start}
-                  {project.period.end && ` - ${project.period.end}`}
+                  {formatPeriod(project.period.start, project.period.end, lang)}
                 </div>
               </div>
               <div className="item-subtitle-row">
