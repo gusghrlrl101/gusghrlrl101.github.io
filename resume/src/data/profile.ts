@@ -232,42 +232,8 @@ export const profile: Profile = {
     },
     {
       title: {
-        kr: "AI플랫폼 서빙 환경 구축",
-        en: "AI Platform Serving Environment Construction"
-      },
-      org: {
-        kr: "우아한형제들",
-        en: "Woowa Brothers"
-      },
-      period: {
-        start: "2023.06",
-        end: "2024.06"
-      },
-      summary: {
-        kr: "실시간 AI 모델 서빙을 위한 자동화 환경을 설계하고, 배포부터 모니터링까지 전체 서빙 프로세스를 효율화했습니다.",
-        en: "Designed an automated environment for real-time AI model serving and streamlined the entire serving process from deployment to monitoring."
-      },
-      background: {
-        kr: "수작업 인프라 구성으로 인한 리소스 낭비 및 서비스 런칭 지연, 운영 부담 심화.",
-        en: "Manual infrastructure configuration wasted resources, causing service launch delays and increased operational burden."
-      },
-      process: {
-        kr: "BentoML 기반 서빙 환경 구축, GitLab CI + ArgoCD 자동 배포 파이프라인, 버전 관리/롤백 설계, 모니터링 대시보드 자동화.",
-        en: "Built serving environment based on BentoML, automated deployment pipeline with GitLab CI + ArgoCD, designed version control/rollback, automated monitoring dashboards."
-      },
-      result: {
-        kr: "서빙 프로세스 40% 단축, 월 20억건·초당 5,000+ 요청 안정 처리, 약 30개 실시간 서비스 운영.",
-        en: "Reduced serving process by 40%, stably processing 2 billion requests/month and 5,000+ requests/second for ~30 real-time services."
-      },
-      links: [
-        "https://techblog.woowahan.com/19548/",
-        "https://deliveryhero.jobs/blog/stable-ai-serving-system-with-a-touch-of-automation/"
-      ]
-    },
-    {
-      title: {
-        kr: "AI플랫폼 학습/배치 환경 구축",
-        en: "AI Platform Training/Batch Environment Construction"
+        kr: "MLOps 환경 구축",
+        en: "MLOps Environment Construction"
       },
       org: {
         kr: "우아한형제들",
@@ -275,25 +241,29 @@ export const profile: Profile = {
       },
       period: {
         start: "2022.06",
-        end: "2023.06"
+        end: "2024.06"
       },
       summary: {
-        kr: "AI 모델 학습과 배치 처리를 효율적으로 수행할 수 있도록, 데이터 관리, 실행 파이프라인, 환경 통합까지 설계하고 자동화 환경을 구축했습니다.",
-        en: "Designed and built an automated environment for efficient AI model training and batch processing, including data management, execution pipelines, and environment integration."
+        kr: "AI 모델의 학습부터 서빙까지 전체 라이프사이클을 자동화하는 MLOps 환경을 설계하고 구축했습니다. 학습/배치 파이프라인과 실시간 서빙 인프라를 통합하여, 모델 개발-배포-운영의 엔드투엔드 프로세스를 효율화했습니다.",
+        en: "Designed and built an MLOps environment automating the entire AI model lifecycle from training to serving. Streamlined the end-to-end process of model development, deployment, and operation by integrating training/batch pipelines with real-time serving infrastructure."
       },
       background: {
-        kr: "프로젝트마다 수작업 설정으로 인한 시간/리소스 소모, 환경 불일치로 인한 오류 빈발.",
-        en: "Manual configuration for each project consumed time/resources, environment inconsistencies caused frequent errors."
+        kr: "프로젝트마다 수작업으로 학습 환경과 인프라를 구성하면서 시간/리소스 소모가 크고, 환경 불일치로 인한 오류가 빈발했습니다. 서빙 환경 역시 수동 구성으로 인해 서비스 런칭이 지연되고 운영 부담이 심화되었습니다.",
+        en: "Manual configuration of training environments and infrastructure per project consumed significant time/resources with frequent errors from environment inconsistencies. Manual serving setup also caused service launch delays and increased operational burden."
       },
       process: {
-        kr: "공통 기능 라이브러리화, 데이터 정책/권한 체계 수립, YAML 기반 배치 구성, MLflow 실험 트래킹, Docker 환경 표준화.",
-        en: "Organized common functions into libraries, established data policies/authorization, YAML-based batch configuration, MLflow experiment tracking, Docker environment standardization."
+        kr: "학습 환경: 공통 기능 라이브러리화, 데이터 정책/권한 체계 수립, YAML 기반 배치 구성, MLflow 실험 트래킹, Docker 환경 표준화 | 서빙 환경: BentoML 기반 서빙 환경 구축, GitLab CI + ArgoCD 자동 배포 파이프라인, 버전 관리/롤백 설계, 모니터링 대시보드 자동화.",
+        en: "Training: Common function libraries, data policy/authorization framework, YAML-based batch configuration, MLflow experiment tracking, Docker standardization | Serving: BentoML-based serving environment, GitLab CI + ArgoCD automated deployment pipeline, version control/rollback design, automated monitoring dashboards."
       },
       result: {
-        kr: "학습 파이프라인 개발 30% 단축, 배치 작업 67% 절감, 130개+ 배치 안정 운영.",
-        en: "Reduced training pipeline development by 30%, batch jobs by 67%, stably operating 130+ batch jobs."
+        kr: "학습 파이프라인 개발 30% 단축, 배치 작업 67% 절감으로 150개+ 배치 안정 운영. 서빙 프로세스 40% 단축, 월 40억건·초당 7,000+ 요청 안정 처리, 50개+ 실시간 서비스 운영.",
+        en: "Reduced training pipeline development by 30%, batch jobs by 67% with 150+ batch jobs in stable operation. Reduced serving process by 40%, stably processing 4 billion requests/month and 7,000+ requests/second across 50+ real-time services."
       },
-      links: ["https://www.youtube.com/live/MA5A7Xqb-7U"]
+      links: [
+        "https://techblog.woowahan.com/19548/",
+        "https://deliveryhero.jobs/blog/stable-ai-serving-system-with-a-touch-of-automation/",
+        "https://www.youtube.com/live/MA5A7Xqb-7U"
+      ]
     },
     {
       title: {
