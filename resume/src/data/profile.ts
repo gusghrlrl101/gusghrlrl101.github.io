@@ -171,8 +171,8 @@ export const profile: Profile = {
   projects: [
     {
       title: {
-        kr: "전사 공통 GenAI 서비스 플랫폼 및 표준 환경 구축",
-        en: "Enterprise GenAI Service Platform & Standard Environment Construction"
+        kr: "GenAI 서비스 플랫폼 구축",
+        en: "GenAI Service Platform"
       },
       org: {
         kr: "우아한형제들",
@@ -180,23 +180,23 @@ export const profile: Profile = {
       },
       period: {
         start: "2025.03",
-        end: "2025.09"
+        end: "2026.04"
       },
       summary: {
-        kr: "다수의 LLM을 통합하고 중앙 집중형 관리 체계를 구축하여, 사내 구성원이 쉽고 안정적으로 서비스를 개발할 수 있는 전사 표준 GenAI 미들웨어(SDK)를 설계하고 개발했습니다.",
-        en: "Designed and developed an enterprise standard GenAI middleware (SDK) to integrate multiple LLMs and establish a centralized management system, enabling easy and stable service development."
+        kr: "다수의 LLM을 통합 관리할 수 있는 전사 표준 GenAI SDK와 Gateway를 설계·개발하고, 지속적인 고도화를 통해 사내 GenAI 서비스 확산 기반을 마련했습니다.",
+        en: "Designed and developed an enterprise standard GenAI SDK and Gateway for unified LLM management, establishing a foundation for scaling internal GenAI services through continuous enhancement."
       },
       background: {
-        kr: "외부 LLM 사용 증가로 인한 운영/장애 대응 분산 및 교체 비용 증가로 플랫폼 차원의 기술 표준화 및 통합 관리 필요.",
+        kr: "외부 LLM 사용 증가로 운영/장애 대응이 분산되고 교체 비용이 증가하여, 플랫폼 차원의 기술 표준화 및 통합 관리 필요.",
         en: "Increased external LLM usage led to fragmented operations and high switching costs, requiring platform-level technical standardization and integrated management."
       },
       process: {
-        kr: "멀티 LLM 통합 인터페이스 및 중앙 관리(시크릿/로그) 체계 구축, 공통 장애 처리 로직(Timeout/Fallback) 내장, RAG/에이전트 확장을 고려한 공통 아키텍처 설계.",
-        en: "Built a unified multi-LLM interface and centralized management system, implemented built-in resilience logic (timeout/fallback), and designed scalable architecture for RAG/Agents."
+        kr: "Langfuse 기반 중앙 관리 체계 및 멀티 LLM 통합 인터페이스 구축, Fallback/Timeout 등 공통 장애 처리 로직 내장, 멀티 프로바이더·Embedding·비동기 호출 지원으로 SDK 단계적 고도화.",
+        en: "Built centralized management system and unified multi-LLM interface based on Langfuse, embedded common resilience logic (Fallback/Timeout), incrementally enhanced SDK with multi-provider, Embedding, and async call support."
       },
       result: {
-        kr: "신규 LLM 연동 리드타임 단축 및 교체 비용 절감, 플랫폼 단위의 고가용성 확보를 통해 사내 GenAI 서비스 확산 기반 마련.",
-        en: "Reduced integration lead time and switching costs, secured platform-level high availability, and established a foundation for scaling internal GenAI services."
+        kr: "신규 LLM 연동 리드타임 단축 및 교체 비용 절감, 사내 GenAI 서비스 확산 기반 마련.",
+        en: "Reduced new LLM integration lead time and switching costs, established foundation for scaling internal GenAI services."
       },
       links: ["https://techblog.woowahan.com/23667/"]
     },
