@@ -555,16 +555,6 @@ export const profile: Profile = {
     },
     {
       name: {
-        kr: "CUDA C/C++ 를 활용한 가속화 컴퓨팅 기초 강의",
-        en: "Fundamentals of Accelerated Computing with CUDA C/C++"
-      },
-      category: {
-        kr: "기술 관련",
-        en: "Technical"
-      }
-    },
-    {
-      name: {
         kr: "OPIc Intermediate High",
         en: "OPIc Intermediate High"
       },
