@@ -182,8 +182,8 @@ export const profile: Profile = {
         start: "2025.10"
       },
       summary: {
-        kr: "LLM Function Calling 기반의 대화형 검색 서비스를 설계하고 개발했습니다. ChatGPT Apps SDK 연동을 통한 외부 채널 실험과, 커머스 도메인의 자연어 검색 서비스를 주도하고 있습니다.",
-        en: "Designed and developed conversational search services based on LLM Function Calling. Led external channel experiments through ChatGPT Apps SDK integration and natural language search services for the commerce domain."
+        kr: "LLM 기반의 대화형 검색 서비스를 설계하고 개발했습니다. ChatGPT Apps SDK 연동을 통한 외부 채널 실험과, 커머스 도메인의 자연어 검색 서비스를 주도하고 있습니다.",
+        en: "Designed and developed conversational search services based on LLM. Led external channel experiments through ChatGPT Apps SDK integration and natural language search services for the commerce domain."
       },
       background: {
         kr: "AI플랫폼 역할이 인프라 제공에서 서비스 직접 참여로 확장되면서, LLM 기반의 새로운 사용자 경험을 실제 서비스에 적용하는 과제가 필요.",
