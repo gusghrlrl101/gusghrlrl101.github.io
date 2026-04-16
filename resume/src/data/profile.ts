@@ -169,35 +169,35 @@ export const profile: Profile = {
     en: "Among the projects I led proactively, I have listed them in recent order, focusing on larger-scale projects. You can see the problem background, solution process, and results achieved."
   },
   projects: [
-    {
-      title: {
-        kr: "AI 기반 대화형 검색 서비스 개발",
-        en: "AI-Powered Conversational Search Service Development"
-      },
-      org: {
-        kr: "우아한형제들",
-        en: "Woowa Brothers"
-      },
-      period: {
-        start: "2025.10"
-      },
-      summary: {
-        kr: "LLM Function Calling 기반의 대화형 검색 서비스를 설계하고 개발했습니다. ChatGPT Apps SDK 연동을 통한 외부 채널 실험과, 커머스 도메인의 자연어 검색 서비스를 주도하고 있습니다.",
-        en: "Designed and developed conversational search services based on LLM Function Calling. Led external channel experiments through ChatGPT Apps SDK integration and natural language search services for the commerce domain."
-      },
-      background: {
-        kr: "AI플랫폼 역할이 인프라 제공에서 서비스 직접 참여로 확장되면서, LLM 기반의 새로운 사용자 경험을 실제 서비스에 적용하는 과제가 필요.",
-        en: "As the AI platform role expanded from infrastructure provision to direct service participation, there was a need to apply LLM-based new user experiences to actual services."
-      },
-      process: {
-        kr: "ChatGPT Apps: MCP 기반 아키텍처 설계, 음식점·레시피 검색 기능 구현, 보안/법무 검토 및 사내 테스트 완료 | 커머스 대화형 검색: LLM Function Calling 기반 자연어 질의 분류 엔진 구축, 멀티 모델(vLLM, Gemini) 지원, Langfuse 트레이싱 연동.",
-        en: "ChatGPT Apps: Designed MCP-based architecture, implemented restaurant and recipe search features, completed security/legal review and internal testing | Commerce conversational search: Built natural language query classification engine based on LLM Function Calling, multi-model (vLLM, Gemini) support, Langfuse tracing integration."
-      },
-      result: {
-        kr: "ChatGPT 연동을 통한 Agent 기반 서비스 접근 방식을 사내 최초 검증. 커머스 대화형 검색 베타 서비스 구축 및 서비스 적용 진행 중.",
-        en: "First internal verification of Agent-based service approach through ChatGPT integration. Commerce conversational search beta service built and production rollout in progress."
-      }
-    },
+    // {
+    //   title: {
+    //     kr: "AI 기반 대화형 검색 서비스 개발",
+    //     en: "AI-Powered Conversational Search Service Development"
+    //   },
+    //   org: {
+    //     kr: "우아한형제들",
+    //     en: "Woowa Brothers"
+    //   },
+    //   period: {
+    //     start: "2025.10"
+    //   },
+    //   summary: {
+    //     kr: "LLM 기반의 대화형 검색 서비스를 설계하고 개발했습니다. ChatGPT Apps SDK 연동을 통한 외부 채널 실험과, 커머스 도메인의 자연어 검색 서비스를 주도하고 있습니다.",
+    //     en: "Designed and developed conversational search services based on LLM. Led external channel experiments through ChatGPT Apps SDK integration and natural language search services for the commerce domain."
+    //   },
+    //   background: {
+    //     kr: "AI플랫폼 역할이 인프라 제공에서 서비스 직접 참여로 확장되면서, LLM 기반의 새로운 사용자 경험을 실제 서비스에 적용하는 과제가 필요.",
+    //     en: "As the AI platform role expanded from infrastructure provision to direct service participation, there was a need to apply LLM-based new user experiences to actual services."
+    //   },
+    //   process: {
+    //     kr: "ChatGPT Apps: MCP 기반 아키텍처 설계, 음식점·레시피 검색 기능 구현, 보안/법무 검토 및 사내 테스트 완료 | 커머스 대화형 검색: LLM Function Calling 기반 자연어 질의 분류 엔진 구축, 멀티 모델(vLLM, Gemini) 지원, Langfuse 트레이싱 연동.",
+    //     en: "ChatGPT Apps: Designed MCP-based architecture, implemented restaurant and recipe search features, completed security/legal review and internal testing | Commerce conversational search: Built natural language query classification engine based on LLM Function Calling, multi-model (vLLM, Gemini) support, Langfuse tracing integration."
+    //   },
+    //   result: {
+    //     kr: "ChatGPT 연동을 통한 Agent 기반 서비스 접근 방식을 사내 최초 검증. 커머스 대화형 검색 베타 서비스 구축 및 서비스 적용 진행 중.",
+    //     en: "First internal verification of Agent-based service approach through ChatGPT integration. Commerce conversational search beta service built and production rollout in progress."
+    //   }
+    // },
     {
       title: {
         kr: "GenAI 서비스 플랫폼 구축",
