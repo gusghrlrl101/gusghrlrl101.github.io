@@ -165,8 +165,8 @@ export const profile: Profile = {
     }
   ],
   projectsIntro: {
-    kr: "주도적으로 이끈 프로젝트 중, 특히 규모가 큰 프로젝트 위주로 최근 순으로 기재했습니다. 문제 배경과 해결 과정, 이를 통한 결과를 확인하실 수 있습니다.",
-    en: "Among the projects I led proactively, I have listed them in recent order, focusing on larger-scale projects. You can see the problem background, solution process, and results achieved."
+    kr: "아래 프로젝트는 모두 제가 리드하며 설계·개발한 것으로, 규모가 큰 프로젝트 위주로 최근 순으로 기재했습니다. 문제 배경과 해결 과정, 이를 통한 결과를 확인하실 수 있습니다.",
+    en: "The projects below were all led, designed, and developed by me, listed in recent order with a focus on larger-scale projects. You can see the problem background, solution process, and results achieved."
   },
   projects: [
     {
